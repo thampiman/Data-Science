@@ -36,4 +36,3 @@ def fetch_data(year,journal,output_file):
 
 if __name__ == "__main__":
     main()
-  
