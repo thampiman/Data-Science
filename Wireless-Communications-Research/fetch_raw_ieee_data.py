@@ -1,7 +1,7 @@
 import urllib2
 
 def main():
-    yearsi = range(2004,2015)
+    yearsi = range(2003,2015)
     journals = [('ISWCS','iswcs'),
                 ('European%20Wireless%20Conference','ew'),
                 ('IEEE%20WoWMoM','wowmom'),
