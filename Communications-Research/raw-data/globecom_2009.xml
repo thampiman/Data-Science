@@ -4,7 +4,7 @@
 
 <totalfound>1209</totalfound>
 
-<totalsearched>3812935</totalsearched>
+<totalsearched>3815627</totalsearched>
 
 <document>
 
@@ -55774,7 +55774,7 @@
 
 <epage><![CDATA[6]]></epage>
 
-<abstract><![CDATA[Mobile WiMAX is claimed to have the greatest potential of all wireless access technologies already in the markets with respect to network capacity, range, mobility, and quality of service support. Mobile WiMAX has also adopted MIMO as an essential element for increasing capacity and data propagation reliability. However, there are few publicly available studies demonstrating what is possible with Mobile WiMAX in practice and none that empirically evaluates the performance gains attained with MIMO. We fill this gap by comparing spacetime coding based 2 Ã? 2 MIMO with single antenna mode in our Mobile WiMAX testbed. We conduct thorough measurements that involve vehicular mobility with different types of traffic. We find that MIMO significantly increases the reliability of data propagation over the wireless link, which is particularly evident when we consider TCP traffic. Since 3GPP LTE, the main rival to Mobile WiMAX, equipment and publicly deployed networks are yet to become available, HSPA and the soon-tobe-deployed HSPA + amendments to UMTS are the only wireless technologies challenging Mobile WiMAX. Thus, we also compare Mobile WiMAX with HSPA, providing the first publicly available side-by-side measurement study.]]></abstract>
+<abstract><![CDATA[Mobile WiMAX is claimed to have the greatest potential of all wireless access technologies already in the markets with respect to network capacity, range, mobility, and quality of service support. Mobile WiMAX has also adopted MIMO as an essential element for increasing capacity and data propagation reliability. However, there are few publicly available studies demonstrating what is possible with Mobile WiMAX in practice and none that empirically evaluates the performance gains attained with MIMO. We fill this gap by comparing spacetime coding based 2 2 MIMO with single antenna mode in our Mobile WiMAX testbed. We conduct thorough measurements that involve vehicular mobility with different types of traffic. We find that MIMO significantly increases the reliability of data propagation over the wireless link, which is particularly evident when we consider TCP traffic. Since 3GPP LTE, the main rival to Mobile WiMAX, equipment and publicly deployed networks are yet to become available, HSPA and the soon-tobe-deployed HSPA + amendments to UMTS are the only wireless technologies challenging Mobile WiMAX. Thus, we also compare Mobile WiMAX with HSPA, providing the first publicly available side-by-side measurement study.]]></abstract>
 
 <isbn><![CDATA[978-1-4244-5626-0]]></isbn>
 
