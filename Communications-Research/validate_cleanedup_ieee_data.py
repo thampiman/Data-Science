@@ -2,11 +2,13 @@ import json
 
 def main():
     # main function
-    yearsi = range(2002,2013)
+    # yearsi = range(2002,2013)
+    yearsi = range(2011,2013)
+    # todo: 2011-2012
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = ['wowmom']
+    input_files = ['iswcs']
     
     for file in input_files:
         for yeari in yearsi:
@@ -24,16 +26,21 @@ def validate_data(input_file,output_file):
         doi = paper['doi']
         year = paper['year']
         citations = paper['citations']
+        authors = paper['authors']
+        
+        if len(authors) <= 0:
+            continue
         
         if citations == 0 or citations > 40:
             print '\nTitle: ' + title
             print 'DOI: ' + doi
             print 'Year: ' + year
+            print 'Citations: ' + str(citations)
             
             citation_i = 0
             while True:
                 citation_s = raw_input('Enter citations for paper: ')
-                if citation_s.isdigit():
+                if integer(citation_s):
                     citation_i = int(citation_s)
                     break
             
@@ -43,6 +50,13 @@ def validate_data(input_file,output_file):
     
     with open(output_file,'w') as f:
         json.dump(data,f)
+
+def integer(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
 
 if __name__ == "__main__":
     main()
