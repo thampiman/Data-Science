@@ -2,12 +2,11 @@ import json
 
 def main():
     # main function
-    #yearsi = range(2002,2013)
-    yearsi = range(2008,2013)
+    yearsi = range(2002,2013)
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = ['wcnc']
+    input_files = ['vtc_spring']
     
     for file in input_files:
         for yeari in yearsi:
