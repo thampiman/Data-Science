@@ -2,7 +2,8 @@ import json
 
 def main():
     # main function
-    yearsi = range(2002,2013)
+    # yearsi = range(2002,2013)
+    yearsi = [2012]
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
