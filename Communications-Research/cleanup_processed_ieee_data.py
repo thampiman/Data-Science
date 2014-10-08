@@ -1,13 +1,13 @@
 import json
+import os 
 
 def main():
     # main function
-    # yearsi = range(2002,2013)
-    yearsi = [2012]
+    yearsi = range(2008,2013)
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = ['vtc_fall']
+    input_files = ['icc']
     
     for file in input_files:
         for yeari in yearsi:
@@ -30,6 +30,14 @@ def cleanup_data(input_file,output_file):
             print '\nTitle: ' + title
             print 'DOI: ' + doi
             print 'Year: ' + year
+            
+            query = 'http://scholar.google.co.uk/scholar?q='
+            if len(doi) != 0:
+                query = query + doi
+            else:
+                query = query + title
+            query = query + '&btnG=&hl=en&as_sdt=0%2C5'
+            os.system("echo '%s' | pbcopy" % query)
             
             citation_i = 0
             while True:

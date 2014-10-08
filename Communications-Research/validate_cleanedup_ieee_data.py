@@ -37,6 +37,14 @@ def validate_data(input_file,output_file):
             print 'Year: ' + year
             print 'Citations: ' + str(citations)
             
+            query = 'http://scholar.google.co.uk/scholar?q='
+            if len(doi) != 0:
+                query = query + doi
+            else:
+                query = query + title
+            query = query + '&btnG=&hl=en&as_sdt=0%2C5'
+            os.system("echo '%s' | pbcopy" % query)
+            
             citation_i = 0
             while True:
                 citation_s = raw_input('Enter citations for paper: ')
