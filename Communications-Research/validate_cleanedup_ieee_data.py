@@ -2,9 +2,7 @@ import json
 
 def main():
     # main function
-    # yearsi = range(2002,2013)
-    yearsi = range(2011,2013)
-    # todo: 2011-2012
+    yearsi = range(2002,2013)
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
@@ -37,6 +35,8 @@ def validate_data(input_file,output_file):
             print 'Year: ' + year
             print 'Citations: ' + str(citations)
             
+            # Makes data entry a lot easier by copying GS link to clipboard
+            # (works only on the Mac)
             query = 'http://scholar.google.co.uk/scholar?q='
             if len(doi) != 0:
                 query = query + doi
