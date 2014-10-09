@@ -1,4 +1,5 @@
 import json
+import os
 
 def main():
     # main function
@@ -6,17 +7,17 @@ def main():
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = ['iswcs']
+    input_files = [('ew','conference')]
     
-    for file in input_files:
+    for (file,type) in input_files:
         for yeari in yearsi:
             year = str(yeari)
             input_file = 'processed-data/' + file + '_c_' + year + '.json'
             output_file = 'processed-data/' + file + '_v_' + year + '.json'
             
-            validate_data(input_file,output_file)
+            validate_data(input_file,type,output_file)
 
-def validate_data(input_file,output_file):
+def validate_data(input_file,type,output_file):
     data = json.loads(open(input_file).read())
     
     for paper in data:
@@ -30,6 +31,9 @@ def validate_data(input_file,output_file):
             continue
         
         if citations == 0 or citations > 40:
+            if citations > 40 and type == 'journal':
+                continue
+            
             print '\nTitle: ' + title
             print 'DOI: ' + doi
             print 'Year: ' + year
