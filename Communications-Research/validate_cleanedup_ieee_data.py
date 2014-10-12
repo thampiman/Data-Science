@@ -5,9 +5,11 @@ def main():
     # main function
     yearsi = range(2002,2013)
     
-    #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
-    #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = [('letters','letters')]
+    input_files = [('iswcs','conference'),('ew','conference'),('wowmom','conference'),
+                   ('wcnc','conference'),('vtc_spring','conference'),('vtc_fall','conference'),
+                   ('icc','conference'),('globecom','conference'),('pimrc','conference'),
+                   ('jsac','journal'),('tvt','journal'),('twc','journal'),
+                   ('letters','letters')]
     
     for (file,type) in input_files:
         for yeari in yearsi:
