@@ -7,7 +7,7 @@ def main():
     
     #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
     #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = [('pimrc','conference')]
+    input_files = [('letters','letters')]
     
     for (file,type) in input_files:
         for yeari in yearsi:
