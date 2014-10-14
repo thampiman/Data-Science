@@ -37,8 +37,7 @@ def load_country_codes(input_file,country_codes):
 def cleanup_data(input_file,output_file,country_codes,countries):
     data = json.loads(open(input_file).read())
     
-    # for paper in data:
-    for index, paper in enumerate(data):
+    for paper in data:
         title = paper['title']
         doi = paper['doi']
         year = paper['year']

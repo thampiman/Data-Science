@@ -21,6 +21,7 @@ def main():
 
 def validate_data(input_file,type,output_file):
     data = json.loads(open(input_file).read())
+    v_data = json.loads(open(output_file).read())
     
     for paper in data:
         title = paper['title']
