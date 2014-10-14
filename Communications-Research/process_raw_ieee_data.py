@@ -52,7 +52,7 @@ def main():
         
             print('Saving Output File: ' + output_file + '\n')
             with open(output_file,'w') as f:
-                json.dump(data,f)
+                json.dump(data,f)   
 
     print 'Cleaning up extracted location data...'
     cleanup_extracted_location_data(location_data_dir,location_data_file)

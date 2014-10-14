@@ -1,5 +1,6 @@
 import json
 import os 
+import csv
 
 def main():
     # main function
@@ -8,22 +9,44 @@ def main():
     input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
                    'globecom','pimrc','jsac','tvt','twc','letters']
     
+    location_data_dir = 'location-data'
+    country_codes_file = 'country_codes.csv'
+
+    country_codes = {}
+    countries = {}
+    
+    print 'Loading country codes...'
+    load_country_codes(location_data_dir+'/'+country_codes_file,country_codes)
+    print 'DONE\n'
+    
     for file in input_files:
         for yeari in yearsi:
             year = str(yeari)
             input_file = 'processed-data/' + file + '_' + year + '.json'
             output_file = 'processed-data/' + file + '_c_' + year + '.json'
             
-            cleanup_data(input_file,output_file)
+            print '\nCleaning up file: ' + input_file
+            cleanup_data(input_file,output_file,country_codes,countries)
 
-def cleanup_data(input_file,output_file):
+def load_country_codes(input_file,country_codes):
+    with open(input_file, mode='r') as infile:
+        reader = csv.reader(infile)
+        for row in reader:
+            country_codes[row[0].lower()] = row[1]
+
+def cleanup_data(input_file,output_file,country_codes,countries):
     data = json.loads(open(input_file).read())
     
-    for paper in data:
+    # for paper in data:
+    for index, paper in enumerate(data):
         title = paper['title']
         doi = paper['doi']
         year = paper['year']
         citations = paper['citations']
+        affiliations = paper['affiliations']
+        
+        a_list = affiliations.split(',')
+        a_list = [s.strip() for s in a_list]
         
         if citations < 0:
             print '\nTitle: ' + title
@@ -50,6 +73,30 @@ def cleanup_data(input_file,output_file):
                     break
             
             paper['citations'] = citation_i
+            
+        country = paper['country']
+        
+        if len(country) == 0:
+            print '\nTitle: ' + title
+            print 'Affiliations: ' + affiliations
+            print 'Year: ' + year
+            
+            for s in a_list:
+                if s in countries:
+                    country = countries[s]
+                    print 'Country set to: ' + country
+                    paper['country'] = country
+                    break
+            
+            if len(country) == 0:
+                while True:
+                    code = raw_input('Enter 2-letter country code: ')
+                    if code in country_codes:
+                        country = country_codes[code]
+                        paper['country'] = country
+                        for s in a_list:
+                            countries[s] = country
+                        break
     
     with open(output_file,'w') as f:
         json.dump(data,f)
