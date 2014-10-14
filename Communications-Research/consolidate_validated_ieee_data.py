@@ -4,13 +4,12 @@ def main():
     # main function
     yearsi = range(2002,2013)
     
-    #input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
-    #               'globecom','pimrc','jsac','tvt','twc','letters']
-    input_files = ['iswcs']
+    input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
+                   'globecom','pimrc','jsac','tvt','twc','letters']
     
     for file in input_files:
         output_data = []
-        output_file = 'processed-data/' + file + '.json'
+        output_file = 'final-data/' + file + '.json'
         for yeari in yearsi:
             year = str(yeari)
             input_file = 'processed-data/' + file + '_v_' + year + '.json'
