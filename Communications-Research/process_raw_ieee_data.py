@@ -1,8 +1,11 @@
-from xml.dom import minidom
 import json
 import urllib2
 import re
-from os import listdir, unlink
+import zipfile
+import shutil
+import csv
+from xml.dom import minidom
+from os import listdir, unlink, remove
 from os.path import isfile, join
 from random import randrange
 from time import sleep
@@ -17,6 +20,27 @@ def main():
     
     input_dir = 'raw-data'
     output_dir = 'processed-data'
+    location_data_dir = 'location-data'
+    location_data_file = 'worldcitiespop.txt'
+    country_codes_file = 'country_codes.csv'
+    
+    regions = {}
+    country_codes = {}
+    countries = {}
+    
+    print 'Extracting location data...'
+    # Source: https://www.maxmind.com/en/worldcities
+    extract_location_data(location_data_dir+'/'+location_data_file + '.zip',
+                          location_data_dir)
+    print 'DONE\n'
+    
+    print 'Loading location data...'
+    load_location_data(location_data_dir+'/'+location_data_file,regions)
+    print 'DONE\n'
+    
+    print 'Loading country codes...'
+    load_country_codes(location_data_dir+'/'+country_codes_file,country_codes,countries)
+    print 'DONE\n'
     
     for file in input_files:
         for yeari in yearsi:
@@ -24,14 +48,43 @@ def main():
             year = str(yeari)
             input_file = input_dir + '/' + file + '_' + year + '.xml'
             output_file = output_dir + '/' + file + '_' + year + '.json'
-            process_raw_data(input_file,output_file,year,data,app_id)
+            process_raw_data(input_file,output_file,year,data,app_id,regions,country_codes,countries)
         
             print('Saving Output File: ' + output_file + '\n')
             with open(output_file,'w') as f:
-                json.dump(data,f)   
-        
+                json.dump(data,f)
 
-def process_raw_data(input_file,output_file,year,data,app_id):
+    print 'Cleaning up extracted location data...'
+    cleanup_extracted_location_data(location_data_dir,location_data_file)
+    print 'DONE\n'
+
+def extract_location_data(input_file,output_dir):
+    zf = zipfile.ZipFile(input_file, "r")
+    zf.extractall(output_dir)
+
+def load_location_data(input_file,regions):
+    with open(input_file, mode='r') as infile:
+        reader = csv.reader(infile)
+        for row in reader:
+            key = row[1].lower()
+            value = row[0].lower()
+            
+            if key in regions:
+                v = regions[key]
+                if value not in v:
+                    regions[key] = v + ',' + value
+            else:
+                regions[key] = value
+
+def load_country_codes(input_file,country_codes,countries):
+    with open(input_file, mode='r') as infile:
+        reader = csv.reader(infile)
+        for row in reader:
+            country_codes[row[0].lower()] = row[1]
+            countries[row[1].lower()] = row[0]
+
+def process_raw_data(input_file,output_file,year,data,app_id,
+                     regions,country_codes,countries):
     print('Processing File: ' + input_file)
     
     try:
@@ -79,6 +132,8 @@ def process_raw_data(input_file,output_file,year,data,app_id):
                 citations = get_citations(app_id,query_title)
                 print 'Citations = ' + str(citations)
         
+            country = get_country(affiliations,regions,country_codes,countries)
+            
             dict = {'title':title,
                     'authors':authors,
                     'affiliations':affiliations,
@@ -87,6 +142,7 @@ def process_raw_data(input_file,output_file,year,data,app_id):
                     'pdf':pdf,
                     'tags':tags,
                     'citations':citations,
+                    'country':country,
                     'year':year}
                 
             data.append(dict)
@@ -116,15 +172,15 @@ def get_citations(app_id,title):
     query_end = '&ResultObjects=Publication&PublicationContent=AllInfo&StartIdx=1&EndIdx=1'
     url_title = query_start + title_query + query_end
     
-    hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-           'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-           'Accept-Encoding': 'none',
-           'Accept-Language': 'en-US,en;q=0.8',
-           'Connection': 'keep-alive'}
+    header = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+              'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+              'Accept-Encoding': 'none',
+              'Accept-Language': 'en-US,en;q=0.8',
+              'Connection': 'keep-alive'}
 
     try:
-        request = urllib2.Request(url_title,None,hdr)
+        request = urllib2.Request(url_title,None,header)
         response = urllib2.urlopen(request)
     
         data = json.load(response)
@@ -149,6 +205,49 @@ def extract_citations_from_data(data):
 
     return -1
 
+def get_country(affiliations,regions,country_codes,countries):
+    affiliations = affiliations.strip()
+    if len(affiliations) == 0:
+        return 'NA'
+    
+    a_list = affiliations.split(',')
+    a_list = [s.strip() for s in a_list]
+    
+    s = ' '.join(a_list)
+    b_list = s.split(' ')
+    
+    country = extract_country(a_list,regions,country_codes,countries)
+    if len(country) > 0:
+        return country
+    
+    return extract_country(b_list,regions,country_codes,countries)
+    
+
+def extract_country(list,regions,country_codes,countries):
+    if 'USA' in list:
+        return country_codes['us']
+    
+    if 'UK' in list:
+        return country_codes['uk']
+    
+    for s in list:
+        s_l = s.lower()
+        if s_l in countries:
+            return s
+        
+        if s_l in regions:
+            c = regions[s_l]
+            if c == 'gb':
+                c = 'uk'
+            
+            if c in country_codes:
+                return country_codes[c]
+    
+    return ''
+
+def cleanup_extracted_location_data(location_data_dir,location_data_file):
+    shutil.rmtree(location_data_dir + '/__MACOSX')
+    remove(location_data_dir + '/' + location_data_file)
+    
 if __name__ == "__main__":
     main()
-    # https://www.maxmind.com/en/worldcities
