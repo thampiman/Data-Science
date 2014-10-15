@@ -23,7 +23,7 @@ def main():
         for yeari in yearsi:
             year = str(yeari)
             input_file = 'processed-data/' + file + '_' + year + '.json'
-            output_file = 'processed-data/' + file + '_c_' + year + '.json'
+            output_file = 'cleanedup-data/' + file + '_c_' + year + '.json'
             
             print '\nCleaning up file: ' + input_file
             cleanup_data(input_file,output_file,country_codes,countries)

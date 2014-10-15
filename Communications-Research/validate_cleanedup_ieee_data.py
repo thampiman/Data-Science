@@ -14,8 +14,8 @@ def main():
     for (file,type) in input_files:
         for yeari in yearsi:
             year = str(yeari)
-            input_file = 'processed-data/' + file + '_c_' + year + '.json'
-            output_file = 'processed-data/' + file + '_v_' + year + '.json'
+            input_file = 'cleanedup-data/' + file + '_c_' + year + '.json'
+            output_file = 'validated-data/' + file + '_v_' + year + '.json'
             
             validate_data(input_file,type,output_file)
 
