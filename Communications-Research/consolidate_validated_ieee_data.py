@@ -12,7 +12,7 @@ def main():
         output_file = 'final-data/' + file + '.json'
         for yeari in yearsi:
             year = str(yeari)
-            input_file = 'processed-data/' + file + '_v_' + year + '.json'
+            input_file = 'validated-data/' + file + '_v_' + year + '.json'
             consolidate_data(input_file,output_file,output_data)
         
         print '\nConsolidating data to file: ' + output_file
