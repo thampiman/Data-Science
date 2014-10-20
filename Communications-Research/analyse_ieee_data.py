@@ -7,7 +7,8 @@ def main():
     ieee_data = load_ieee_data()
     
     # Analyse the IEEE data
-    analyse_publications_and_quality(ieee_data)
+    analyse_publications(ieee_data)
+    analyse_countries(ieee_data)
     
 def load_ieee_data():
     # Conferences
@@ -53,7 +54,7 @@ def add_code_type_columns(df,code,type):
     df['code'] = code
     df['type'] = type
 
-def analyse_publications_and_quality(ieee_data):
+def analyse_publications(ieee_data):
     pubs_by_yr_code = ieee_data.groupby(['code','year'])['citations'].count().unstack()
     citations_by_yr_code = ieee_data.groupby(['code','year'])['citations'].sum().unstack()
     quality_by_yr_code = citations_by_yr_code / pubs_by_yr_code
@@ -64,6 +65,24 @@ def analyse_publications_and_quality(ieee_data):
     print 'Quality of Publications grouped by Code and Year'
     print '------------------------------------------------'
     print quality_by_yr_code
+    print '\n'
+
+def analyse_countries(ieee_data):
+    pubs_by_country = ieee_data.groupby('country')['citations'].count()
+    citations_by_country = ieee_data.groupby('country')['citations'].sum()
+    quality_by_country = citations_by_country / pubs_by_country
+    
+    pubs_by_country.sort(ascending=False)
+    quality_by_country.sort(ascending=False)
+        
+    print 'Number of Publications grouped by Code and Country'
+    print '--------------------------------------------------'
+    print pubs_by_country[0:50]
+    print '\n'
+    print 'Quality of Publications grouped by Code and Country'
+    print '---------------------------------------------------'
+    print quality_by_country[0:50]
+    print '\n'
 
 if __name__ == "__main__":
     main()
