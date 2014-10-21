@@ -48,6 +48,12 @@ def load_ieee_data():
                            vtc_fall,vtc_spring,wcnc,wowmom,
                            jsac,letters,tvt,twc])
     
+    # Format Country and Tags strings - make them lowercase
+    country_format = lambda x: np.NaN if x == 'NA' else x.lower()
+    tags_format = lambda x: np.NaN if x == '' else x.lower()
+    ieee_data['country'] = ieee_data['country'].map(country_format)
+    ieee_data['tags'] = ieee_data['tags'].map(tags_format)
+    
     return ieee_data
 
 def add_code_type_columns(df,code,type):
@@ -57,7 +63,7 @@ def add_code_type_columns(df,code,type):
 def analyse_publications(ieee_data):
     pubs_by_yr_code = ieee_data.groupby(['code','year'])['citations'].count().unstack()
     citations_by_yr_code = ieee_data.groupby(['code','year'])['citations'].sum().unstack()
-    quality_by_yr_code = citations_by_yr_code / pubs_by_yr_code
+    quality_by_yr_code = np.round(citations_by_yr_code / pubs_by_yr_code)
     print 'Number of Publications grouped by Code and Year'
     print '-----------------------------------------------'
     print pubs_by_yr_code
@@ -70,18 +76,22 @@ def analyse_publications(ieee_data):
 def analyse_countries(ieee_data):
     pubs_by_country = ieee_data.groupby('country')['citations'].count()
     citations_by_country = ieee_data.groupby('country')['citations'].sum()
-    quality_by_country = citations_by_country / pubs_by_country
+    
+    pubs_by_country_filtered = pubs_by_country[pubs_by_country > 500]
+    citations_by_country_filtered = citations_by_country[pubs_by_country > 500]
+    
+    quality_by_country = np.round(citations_by_country_filtered / pubs_by_country_filtered)
     
     pubs_by_country.sort(ascending=False)
     quality_by_country.sort(ascending=False)
         
     print 'Number of Publications grouped by Code and Country'
     print '--------------------------------------------------'
-    print pubs_by_country[0:50]
+    print pubs_by_country[0:20]
     print '\n'
     print 'Quality of Publications grouped by Code and Country'
     print '---------------------------------------------------'
-    print quality_by_country[0:50]
+    print quality_by_country[0:20]
     print '\n'
 
 if __name__ == "__main__":
