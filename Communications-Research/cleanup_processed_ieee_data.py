@@ -4,7 +4,7 @@ import csv
 
 def main():
     # main function
-    yearsi = range(2002,2013)
+    years = [str(year) for year in range(2002,2013)]
     
     input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
                    'globecom','pimrc','jsac','tvt','twc','letters']
@@ -20,8 +20,7 @@ def main():
     print 'DONE\n'
     
     for file in input_files:
-        for yeari in yearsi:
-            year = str(yeari)
+        for year in years:
             input_file = 'processed-data/' + file + '_' + year + '.json'
             output_file = 'cleanedup-data/' + file + '_c_' + year + '.json'
             

@@ -4,7 +4,7 @@ from os import remove
 
 def main():
     # main function
-    yearsi = range(2002,2013)
+    years = [str(year) for year in range(2002,2013)]
     
     codes = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
              'globecom','pimrc','jsac','tvt','twc','letters']
@@ -13,31 +13,29 @@ def main():
              'conference','conference','conference','conference','journal',
              'journal','journal','journal']
     
-    cleanup_data(yearsi)         
-    consolidate_ieee_data(yearsi,codes,types)
-    consolidate_tags_by_year(yearsi,codes)
+    cleanup_data(years)         
+    consolidate_ieee_data(years,codes,types)
+    consolidate_tags_by_year(years,codes)
 
-def cleanup_data(yearsi):
+def cleanup_data(years):
     try:
         ieee_file = 'final-data/ieee_data.json'
         remove(ieee_file)
     
-        for yeari in yearsi:
-            year = str(yeari)
+        for year in years:
             tags_file = 'final-data/tags_' + year + '.csv'
             remove(tags_file)
     except OSError:
         pass
 
-def consolidate_ieee_data(yearsi,codes,types):
+def consolidate_ieee_data(years,codes,types):
     output_data = []
     output_file = 'final-data/ieee_data.json'
     
     print '\n\nConsolidating IEEE Data'
     for index, code in enumerate(codes):
         type = types[index]
-        for yeari in yearsi:
-            year = str(yeari)
+        for year in years:
             input_file = 'validated-data/' + code + '_v_' + year + '.json'
             add_data(input_file,code,type,output_data)
         
@@ -63,10 +61,9 @@ def add_data(input_file,code,type,output_data):
         
         output_data.append(paper)
 
-def consolidate_tags_by_year(yearsi,codes):
+def consolidate_tags_by_year(years,codes):
     print '\n\nConsolidating Tags Data'
-    for yeari in yearsi:
-        year = str(yeari)
+    for year in years:
         output_file = 'final-data/tags_' + year + '.csv'
         for code in codes:
             input_file = 'validated-data/' + code + '_v_' + year + '.json'

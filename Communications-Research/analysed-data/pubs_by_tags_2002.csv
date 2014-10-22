@@ -1,0 +1,2428 @@
+telecommunication traffic,794
+multiaccess communication,633
+quality of service,599
+fading,598
+code division multiple access,592
+cellular radio,556
+bandwidth,447
+internet,408
+diversity reception,403
+error statistics,392
+spread spectrum communication,384
+rayleigh channels,377
+receiving antennas,369
+multipath channels,360
+delay,348
+transmitting antennas,341
+mobile radio,311
+fading channels,306
+packet radio networks,301
+multiuser channels,298
+performance analysis,296
+interference suppression,291
+land mobile radio,288
+3g mobile communication,287
+ofdm modulation,284
+traffic control,278
+data communication,271
+channel capacity,271
+radiofrequency interference,258
+power control,257
+interference,256
+intelligent networks,253
+protocols,253
+throughput,253
+radio receivers,244
+wireless communication,239
+base stations,234
+bit error rate,227
+delays,225
+decoding,224
+frequency,223
+telecommunication network routing,222
+antenna arrays,222
+intersymbol interference,219
+probability,218
+packet switching,211
+wireless lan,210
+transport protocols,209
+channel estimation,201
+access protocols,200
+iterative decoding,198
+turbo codes,198
+network topology,198
+optimisation,190
+radio links,190
+downlink,183
+computational complexity,183
+convolutional codes,182
+modulation coding,179
+broadband networks,178
+block codes,177
+mobile communication,173
+transmitters,172
+degradation,172
+wavelength division multiplexing,171
+channel coding,168
+multimedia communication,168
+costs,167
+array signal processing,162
+telecommunication congestion control,162
+wireless networks,159
+multiuser detection,156
+telecommunication control,153
+awgn,152
+signal to noise ratio,148
+queueing theory,146
+analytical models,146
+resource management,142
+ofdm,141
+parameter estimation,141
+mimo,138
+awgn channels,137
+time division multiple access,136
+signal detection,133
+ip networks,132
+mimo systems,131
+ad hoc networks,131
+radio networks,129
+frequency estimation,128
+statistical analysis,127
+maximum likelihood estimation,122
+phase shift keying,122
+least mean squares methods,118
+laboratories,118
+computer science,118
+error analysis,117
+correlation methods,117
+detectors,115
+routing,114
+switches,113
+optical fibre networks,113
+radio access networks,112
+feedback,112
+routing protocols,109
+performance evaluation,109
+time-varying channels,108
+multiple access interference,107
+delay estimation,105
+wideband,104
+signal processing,102
+algorithm design and analysis,101
+computational modeling,100
+concatenated codes,99
+optical fiber networks,98
+radiowave propagation,97
+robustness,97
+mobile computing,96
+interleaved codes,95
+adaptive antenna arrays,91
+computer networks,90
+interference cancellation,88
+forward error correction,88
+communication system traffic control,88
+channel allocation,86
+multicast communication,86
+telecommunication standards,86
+computer simulation,86
+bandwidth allocation,85
+matched filters,85
+streaming media,84
+system performance,84
+quadrature amplitude modulation,83
+synchronisation,83
+land mobile radio cellular systems,83
+radio transmitters,82
+scheduling,81
+maximum likelihood decoding,81
+scheduling algorithm,80
+web and internet services,80
+iterative algorithms,79
+asynchronous transfer mode,79
+personal communication networks,77
+markov processes,77
+stochastic processes,77
+adaptive systems,77
+statistics,77
+timing,77
+mobile antennas,77
+bit rate,75
+digital simulation,75
+indoor radio,75
+media access protocol,74
+error probability,74
+equalisers,74
+delay effects,73
+iterative methods,73
+error correction,73
+additive white noise,72
+protection,72
+gaussian noise,72
+adaptive control,72
+automatic repeat request,72
+gsm,71
+testing,70
+telecommunication network planning,70
+error correction codes,69
+quadrature phase shift keying,69
+rician channels,67
+maximum likelihood detection,67
+telecommunication channels,67
+power system modeling,67
+space-time codes,67
+demodulation,66
+transceivers,66
+scalability,65
+control systems,65
+buffer storage,65
+network servers,65
+multicast protocols,64
+bluetooth,64
+filtering theory,63
+convergence,63
+eigenvalues and eigenfunctions,63
+telecommunication network management,63
+adaptive arrays,62
+satellite communication,61
+wdm networks,58
+hardware,58
+wireless application protocol,58
+diversity methods,57
+antennas and propagation,56
+telecommunication signalling,56
+propagation delay,56
+application software,56
+receivers,56
+telecommunication network reliability,55
+matrix algebra,55
+narrowband,55
+signal analysis,54
+interchannel interference,54
+antenna measurements,54
+equalizers,54
+global positioning system,54
+cochannel interference,53
+multimedia systems,53
+electronic mail,53
+rake receivers,52
+communication system control,51
+cellular networks,49
+frequency division multiplexing,49
+programmable control,49
+modulation,49
+computer network management,49
+upper bound,49
+frequency synchronization,48
+broadcasting,48
+multiprotocol label switching,48
+mean square error methods,48
+resource allocation,48
+proposals,48
+mobile ad hoc networks,47
+binary phase shift keying,47
+optical wavelength conversion,47
+microcellular radio,47
+cost function,46
+admission control,46
+minimisation,46
+internet telephony,46
+parity check codes,46
+filters,46
+space time codes,46
+multicarrier code division multiple access,46
+approximation theory,46
+antenna radiation patterns,45
+decision feedback equalisers,45
+predictive models,45
+frequency shift keying,45
+performance gain,45
+propagation losses,44
+noise,43
+trellis codes,43
+ray tracing,43
+telecommunication computing,42
+shadow mapping,42
+encoding,42
+direction-of-arrival estimation,42
+crosstalk,41
+heuristic algorithms,41
+physical layer,41
+signal resolution,41
+local area networks,41
+channel state information,41
+equations,41
+ieee standards,41
+polynomials,41
+digital subscriber lines,40
+frequency domain analysis,40
+diffserv networks,40
+optical switches,40
+modems,40
+baseband,39
+time measurement,39
+mobile satellite communication,39
+integrated voice/data communication,39
+dsl,39
+random variables,39
+closed-form solution,38
+decision feedback equalizers,38
+uhf radio propagation,38
+ground penetrating radar,38
+monitoring,38
+video coding,38
+pulse modulation,38
+frequency conversion,38
+radio frequency,38
+finite impulse response filter,37
+phase estimation,37
+least squares approximation,37
+decorrelation,37
+frequency diversity,37
+viterbi algorithm,37
+signal sampling,36
+scattering,36
+spine,36
+energy consumption,36
+signal processing algorithms,36
+adaptive modulation,36
+digital video broadcasting,36
+computer architecture,36
+radio direction-finding,35
+wireless sensor networks,35
+multicast algorithms,35
+visual communication,35
+adaptive filters,35
+covariance matrix,35
+autocorrelation,35
+broadband communication,35
+phase modulation,35
+time division multiplexing,34
+linear antenna arrays,34
+adjacent channel interference,34
+signal design,34
+convergence of numerical methods,34
+aggregates,33
+electromagnetic wave scattering,33
+correlators,33
+telephony,33
+directive antennas,33
+digital radio,32
+satellite broadcasting,32
+data compression,32
+performance loss,32
+switching circuits,32
+genetic algorithms,32
+filtering,32
+ultra wideband technology,32
+telecommunication security,32
+gaussian distribution,32
+tcpip,32
+artificial satellites,31
+transfer functions,31
+trellis coded modulation,31
+jitter,31
+voice communication,31
+computer errors,31
+communication networks,31
+nonlinear distortion,30
+least squares approximations,30
+vehicles,30
+optical packet switching,30
+antenna theory,30
+sampling methods,30
+peak to average power ratio,30
+multi-access systems,30
+monte carlo methods,30
+transient response,29
+code standards,29
+radio control,29
+web server,29
+cache storage,29
+spectral analysis,29
+microcell networks,29
+space technology,29
+interference constraints,29
+power measurement,29
+graph theory,28
+next generation networking,28
+probability density function,28
+educational institutions,28
+cryptography,27
+interpolation,27
+dispersion,27
+sonet,27
+differential phase shift keying,27
+dispersive channels,27
+adaptive signal detection,27
+large-scale systems,27
+wavelength routing,27
+unicast,27
+random processes,27
+australia,27
+gaussian processes,26
+frequency hop communication,26
+circuits,26
+linear programming,26
+telecommunication switching,26
+convolution,26
+radio spectrum management,26
+capacity planning,26
+information technology,26
+processor scheduling,26
+statistical distributions,26
+search problems,26
+additive noise,25
+macrocell networks,25
+viterbi decoding,25
+fractals,25
+queueing analysis,25
+reed-solomon codes,25
+cities and towns,25
+doppler effect,25
+constellation diagram,25
+availability,25
+relays,25
+sequences,24
+constraint optimization,24
+redundancy,24
+databases,24
+nonlinear filters,24
+blind equalizers,24
+radio link,24
+digital communication,24
+signal generators,24
+radio network,24
+adaptive codes,24
+payloads,24
+loss measurement,24
+adaptive algorithm,24
+code division multiplexing,24
+trees (mathematics),24
+adaptive equalisers,24
+distributed algorithms,23
+distributed control,23
+estimation error,23
+working environment noise,23
+power amplifiers,23
+maximum likelihood sequence estimation,23
+blind equalisers,23
+stability,23
+jamming,23
+mobile handsets,23
+software radio,22
+fir filters,22
+vectors,22
+codes,22
+design optimization,22
+optical receivers,22
+discrete fourier transforms,22
+polarization,22
+channel bank filters,22
+prediction theory,22
+mathematical model,22
+system testing,21
+technological innovation,21
+telecommunications,21
+radio tracking,21
+wavelength assignment,21
+microwave propagation,21
+indoor environments,21
+load management,21
+clocks,21
+video compression,21
+gaussian channels,21
+space division multiple access,21
+fluctuations,21
+communication switching,21
+phase detection,21
+helium,20
+frequency measurement,20
+frequency allocation,20
+phase noise,20
+low earth orbit satellites,20
+peer to peer computing,20
+broadband antennas,20
+wide area networks,20
+electromagnetic wave polarisation,20
+product codes,19
+picocellular radio,19
+information analysis,19
+urban areas,19
+frequency-domain analysis,19
+video on demand,19
+delay lines,19
+frequency-selective fading channels,19
+design methodology,19
+batteries,19
+power engineering and energy,18
+real time systems,18
+kalman filters,18
+digital filters,18
+optical buffering,18
+matrix decomposition,18
+covariance matrices,18
+fabrics,18
+fast fourier transforms,18
+image coding,18
+pseudonoise codes,18
+client-server systems,18
+solid modeling,18
+intserv networks,18
+adaptive signal processing,18
+time domain analysis,18
+information systems,18
+amplitude modulation,17
+topology,17
+clustering algorithms,17
+power generation,17
+continuous phase modulation,17
+distribution functions,17
+hidden markov models,17
+table lookup,17
+automatic control,17
+mobile radio mobility management,17
+measurement,17
+road vehicles,17
+data mining,17
+integral equations,17
+call admission control,17
+personal area networks,17
+pairwise error probability,17
+adaptive estimation,17
+gaussian approximation,17
+optical transmitters,17
+design engineering,17
+centralized control,17
+shape,17
+communication system security,16
+noise robustness,16
+prototypes,16
+distributed computing,16
+message authentication,16
+satellites,16
+binary codes,16
+contracts,16
+adaptive equalizers,16
+round robin,16
+state estimation,16
+source coding,16
+steady-state,16
+electromagnetic wave absorption,16
+variable rate codes,16
+standards development,16
+dynamic programming,16
+computational efficiency,16
+pulse shaping methods,16
+guidelines,16
+fault tolerance,16
+automobiles,16
+antenna feeds,16
+high speed optical techniques,16
+attenuation,16
+teleconferencing,15
+frequency division multiple access,15
+virtual private networks,15
+frequency division multiaccess,15
+communication channels,15
+master-slave,15
+radio broadcasting,15
+log normal distribution,15
+probability distribution,15
+fingers,15
+computer network reliability,15
+personal digital assistants,15
+optical design,15
+standardization,15
+carrier sense multiple access,15
+data engineering,15
+paging communication,15
+position measurement,15
+direction of arrival estimation,15
+optimal control,15
+noise measurement,15
+differential detection,14
+filter bank,14
+optical fiber communication,14
+chaos,14
+quantization,14
+speech coding,14
+telecommunication services,14
+speech analysis,14
+world wide web,14
+optical control,14
+space-time adaptive processing,14
+rayleigh scattering,14
+access control,14
+videoconference,14
+rain,14
+singular value decomposition,14
+geometry,14
+optical network units,14
+collision avoidance,14
+telecommunication networks,14
+tariffs,14
+research and development,14
+bayesian methods,14
+context,14
+circuit switching,14
+telephone sets,14
+electric vehicles,14
+transform coding,13
+azimuth,13
+magnetic recording,13
+electromagnetic wave diffraction,13
+optimization methods,13
+joining processes,13
+hybrid electric vehicles,13
+acceleration,13
+radio propagation,13
+fuzzy logic,13
+4g mobile communication,13
+paper technology,13
+technology management,13
+integer programming,13
+pricing,13
+communications technology,13
+simulated annealing,13
+radiocommunication,13
+spatial resolution,13
+detection algorithms,13
+lakes,13
+uncertainty,13
+pulse position modulation,13
+costing,13
+chaotic communication,13
+public key cryptography,13
+optical fibers,13
+neural networks,13
+bayes methods,13
+binary sequences,13
+data security,13
+sun,13
+amplitude estimation,13
+engineering management,13
+frequency response,13
+resonance light scattering,13
+optical modulation,12
+information security,12
+context modeling,12
+power consumption,12
+phased arrays,12
+europe,12
+electrical capacitance tomography,12
+high power amplifiers,12
+digital modulation,12
+least squares methods,12
+optical links,12
+paging strategies,12
+java,12
+partitioning algorithms,12
+humans,12
+wavelet transforms,12
+character generation,12
+recursive estimation,12
+silicon carbide,12
+combined source-channel coding,12
+tracking,12
+authentication,12
+satellite links,12
+satellite ground stations,12
+sparse matrices,12
+propulsion,11
+dynamic scheduling,11
+web sites,11
+mutual information,11
+safety,11
+information management,11
+systems engineering and theory,11
+probes,11
+quality management,11
+data analysis,11
+euclidean distance,11
+automated highways,11
+game theory,11
+smoothing methods,11
+energy efficiency,11
+codecs,11
+mesh networks,11
+associate members,11
+approximation algorithms,11
+nakagami distribution,11
+uhf antennas,11
+optical communication,11
+partial response channels,11
+communication systems,11
+direct-sequence code-division multiple access,11
+speech,11
+home automation,11
+buildings,11
+network interfaces,11
+demodulators,11
+open systems,11
+optical burst switching,11
+environmental management,10
+digital signal processing,10
+time varying systems,10
+interference elimination,10
+random noise,10
+memoryless systems,10
+timing jitter,10
+cyclic redundancy check,10
+broadcast channels,10
+vehicle driving,10
+power system reliability,10
+linear codes,10
+digital signal processing chips,10
+tail,10
+oscillators,10
+size control,10
+noise level,10
+millimetre wave propagation,10
+noise reduction,10
+multiplexing,10
+real-time systems,10
+calibration,10
+mobile agents,10
+minimum shift keying,10
+tunneling,9
+floods,9
+multistage interconnection networks,9
+floors,9
+fourier transforms,9
+noise cancellation,9
+multiple signal classification,9
+roaming,9
+subscriptions,9
+mathematics,9
+simulation,9
+correlation theory,9
+diffraction,9
+councils,9
+software architecture,9
+mpeg 4 standard,9
+discrete event simulation,9
+autoregressive processes,9
+time-domain analysis,9
+automotive engineering,9
+entropy,9
+numerical analysis,9
+bidirectional control,9
+optical losses,9
+wiener filter,9
+informatics,9
+identification,9
+white noise,9
+internetworking,9
+intelligent transportation systems,9
+information science,9
+iir filters,9
+amplitude shift keying,9
+impulse noise,9
+higher order statistics,9
+colored noise,9
+collaboration,9
+high-speed networks,8
+isdn,8
+multibeam antennas,8
+torque control,8
+portable computers,8
+assembly,8
+information rates,8
+art,8
+synchronous digital hierarchy,8
+optical noise,8
+quantisation (signal),8
+sensor arrays,8
+ethernet networks,8
+digital audio broadcasting,8
+band pass filters,8
+communication standards,8
+process design,8
+signal classification,8
+voltage,8
+minimax techniques,8
+reliability engineering,8
+gamma distribution,8
+dynamic range,8
+electromagnetic propagation,8
+drives,8
+piecewise linear techniques,8
+signal restoration,8
+energy management,8
+gain,8
+doppler shift,8
+engines,8
+differential quadrature phase shift keying,8
+state feedback,8
+chromium,8
+fuel cell vehicles,8
+directional antennas,8
+wiener filters,8
+context-aware services,8
+space stations,8
+noise generators,8
+all-optical networks,8
+sociotechnical systems,8
+field programmable gate arrays,8
+displays,8
+partial transmit sequences,8
+neural nets,8
+feedforward,8
+optical sensors,8
+parallel algorithms,8
+road accidents,8
+exponential distribution,8
+area measurement,8
+power engineering computing,8
+ultra wideband communication,8
+velocity measurement,8
+road transportation,8
+road traffic,8
+manufacturing,8
+copper,8
+radiofrequency amplifiers,8
+optical signal processing,8
+bismuth,8
+discrete wavelet transforms,7
+data systems,7
+signal reconstruction,7
+numerical stability,7
+radio communication,7
+background noise,7
+communication cables,7
+information theory,7
+motion estimation,7
+software agents,7
+hamming distance,7
+signal synthesis,7
+slot antennas,7
+stochastic systems,7
+wheels,7
+distributed databases,7
+reflection,7
+multidimensional systems,7
+impedance,7
+information retrieval,7
+computer aided software engineering,7
+information filters,7
+information filtering,7
+dipole antennas,7
+energy resolution,7
+concurrent computing,7
+phase locked loops,7
+density functional theory,7
+circuit simulation,7
+very large scale integration,7
+scattering parameters,7
+explosives,7
+jacobian matrices,7
+reviews,7
+transportation,7
+satellite constellations,7
+variable length codes,7
+history,7
+satellite antennas,7
+tree data structures,7
+file servers,7
+optical fibre subscriber loops,7
+closed loop systems,7
+optical filters,7
+laplace equations,7
+yield estimation,7
+content management,7
+speech codecs,7
+length measurement,7
+lattices,7
+mathematical programming,7
+blind source separation,7
+matrix inversion,7
+galois fields,7
+gain measurement,7
+electromagnetic coupling,7
+emergency services,7
+sequential estimation,7
+sensor systems,7
+optical devices,7
+source separation,7
+video sharing,7
+fuzzy control,7
+random codes,7
+video sequences,7
+video recording,7
+optical fiber cables,7
+wire,7
+postal services,7
+military communication,7
+image reconstruction,6
+impedance matching,6
+broadcast technology,6
+standardisation,6
+bridges,6
+numerical simulation,6
+optical fiber lan,6
+image sequences,6
+layout,6
+acoustic propagation,6
+investments,6
+traction motors,6
+estimation theory,6
+fuel cells,6
+mathematical analysis,6
+transforms,6
+fcc,6
+application program interfaces,6
+feeds,6
+linux,6
+tree searching,6
+tropospheric electromagnetic wave propagation,6
+tv,6
+lifting equipment,6
+fluid flow measurement,6
+uniform resource locators,6
+traction motor drives,6
+error detection codes,6
+sufficient conditions,6
+virtual colonoscopy,6
+distributed processing,6
+switching systems,6
+gradient methods,6
+government,6
+telecommunication equipment testing,6
+instruments,6
+telecommunication network topology,6
+telecommunication terminals,6
+automotive electronics,6
+electric motors,6
+wavelength measurement,6
+microstrip antennas,6
+energy conservation,6
+metropolitan area networks,6
+added delay,6
+integer linear programming,6
+communication system traffic,6
+pattern analysis,6
+rf signals,6
+photonic switching systems,6
+coherence,6
+repeaters,6
+pulse amplitude modulation,6
+public key,6
+condition monitoring,6
+counting circuits,6
+service oriented architecture,6
+security of data,6
+packet reservation multiple access,6
+roads,6
+power system management,6
+power system planning,6
+circuit topology,6
+space division multiplexing,6
+optimal scheduling,6
+permanent magnet motors,6
+cells (electric),6
+rail transportation,6
+data structures,6
+reflector antennas,6
+parallel processing,6
+size measurement,6
+optical propagation,6
+random sequences,6
+sections,5
+measurement standards,5
+security,5
+set theory,5
+training data,5
+arithmetic,5
+failure analysis,5
+pattern clustering,5
+bch codes,5
+transversal filters,5
+event detection,5
+token networks,5
+torque,5
+electric propulsion,5
+message passing,5
+time series,5
+microstrip antenna arrays,5
+signal mapping,5
+ear,5
+employment,5
+electronic switching systems,5
+logic,5
+time difference of arrival,5
+physics computing,5
+millimeter wave technology,5
+phase frequency detector,5
+feedback loop,5
+spatial filters,5
+field strength measurement,5
+gold,5
+add-drop multiplexers,5
+viterbi detection,5
+vocoders,5
+reliability,5
+gears,5
+wavelength conversion,5
+wavelength converters,5
+collaborative work,5
+concrete,5
+web pages,5
+web services,5
+indoor radio communication,5
+independent component analysis,5
+image communication,5
+railways,5
+histograms,5
+internal combustion engines,5
+coaxial cables,5
+prediction algorithms,5
+antenna testing,5
+runtime,5
+antennas,5
+tuning,5
+passband,5
+tv broadcasting,5
+principal component analysis,5
+robust control,5
+analogue-digital conversion,5
+job shop scheduling,5
+consumer electronics,5
+large scale integration,5
+conjugate gradient methods,5
+frequency modulation,5
+user interfaces,5
+kernel,5
+vehicle dynamics,5
+finite difference time-domain analysis,5
+power system relaying,5
+optical fibre communication,5
+stability analysis,5
+optical attenuators,5
+business communication,5
+business,5
+packaging,5
+stimulated emission,5
+density measurement,5
+optical pulses,5
+intermodulation,4
+intermodulation distortion,4
+cryptographic protocols,4
+sensor phenomena and characterization,4
+video servers,4
+optical delay lines,4
+discrete cosine transforms,4
+energy measurement,4
+psnr,4
+video codecs,4
+sensitivity analysis,4
+couplings,4
+inverse problems,4
+fuels,4
+residue number systems,4
+resilience,4
+optical crosstalk,4
+pulse measurements,4
+pipelines,4
+remote sensing,4
+electronic commerce,4
+waveguide theory,4
+electromagnetic fields,4
+computer vision,4
+cables,4
+authorisation,4
+thermal noise,4
+thyristors,4
+electromagnetic wave reflection,4
+pulse shaping,4
+fuzzy systems,4
+vehicle safety,4
+optical fiber devices,4
+sequential decoding,4
+virtual reality,4
+emulation,4
+cutoff frequency,4
+time frequency analysis,4
+springs,4
+interference channels,4
+microprocessors,4
+semiconductor device measurement,4
+deconvolution,4
+software prototyping,4
+sorting,4
+magnetic noise,4
+digital multimedia broadcasting,4
+extraterrestrial measurements,4
+process planning,4
+antenna phased arrays,4
+ubiquitous computing,4
+twisted pair cables,4
+body sensor networks,4
+losses,4
+printers,4
+operating systems,4
+feedback control,4
+lighting,4
+loaded antennas,4
+filtering algorithms,4
+predistortion,4
+state-space methods,4
+software tools,4
+linear regression,4
+satellite navigation systems,4
+cordless telephone systems,4
+production,4
+artificial intelligence,4
+milling machines,4
+stochastic resonance,4
+airports,4
+measurement errors,4
+direct broadcasting by satellite,4
+lagrangian functions,4
+standards organizations,4
+search engines,4
+usa councils,4
+analog-digital conversion,4
+power distribution,4
+power electronics,4
+large hadron collider,4
+spatiotemporal phenomena,4
+trajectory,4
+output feedback,4
+maintenance engineering,4
+maintenance,4
+aircraft communication,4
+microwave links,4
+linear systems,4
+belief propagation,4
+cellular phones,4
+buffer overflow,4
+bipartite graph,4
+graphical user interfaces,4
+nasa,4
+passive optical networks,4
+software algorithms,4
+inference mechanisms,4
+smart cards,4
+radar tracking,4
+h infinity control,4
+hadamard codes,4
+parametric statistics,4
+signal representation,4
+subscriber loops,4
+distributed object management,4
+wiring,4
+combinatorial mathematics,4
+computational geometry,4
+dc motors,4
+pattern matching,4
+hierarchical systems,4
+bandlimited communication,4
+bandlimited signals,4
+battery powered vehicles,4
+random access memory,4
+multimedia computing,4
+hdtv,4
+symmetric matrices,4
+communication industry,4
+mobile robots,4
+heat engines,4
+central office,4
+golay codes,4
+electric sensing devices,4
+genetic expression,4
+national electric code,4
+distance measurement,4
+electric impedance,4
+distortion,4
+sum product algorithm,4
+registers,4
+tellurium,4
+network synthesis,4
+hysteresis,4
+home appliances,4
+terminology,4
+series (mathematics),4
+optical fibre lan,4
+decision support systems,4
+constraint theory,3
+laser sintering,3
+hybrid fiber coaxial cables,3
+hopfield neural networks,3
+alternators,3
+rough surfaces,3
+image converters,3
+delay systems,3
+accounting,3
+rail to rail inputs,3
+lattice filters,3
+linear matrix inequalities,3
+image quality,3
+accuracy,3
+turning,3
+compression algorithms,3
+contacts,3
+privacy,3
+force measurement,3
+brownian motion,3
+forgery,3
+two dimensional displays,3
+laplace transforms,3
+two-dimensional digital filters,3
+optical add-drop multiplexers,3
+ici,3
+context awareness,3
+robust stability,3
+analysis of variance,3
+communication system software,3
+home computing,3
+root mean square,3
+writing,3
+finite difference methods,3
+absorption,3
+operating systems (computers),3
+burst switching,3
+road safety,3
+geophysical measurement techniques,3
+reed-muller codes,3
+collision mitigation,3
+quantum computing,3
+interference (signal),3
+virtual prototyping,3
+space vector pulse width modulation,3
+quality control,3
+space missions,3
+linearisation techniques,3
+wavelet domain,3
+gain control,3
+intelligent vehicles,3
+intelligent systems,3
+optical distortion,3
+wavelet analysis,3
+genetic mutations,3
+computerized monitoring,3
+computerised monitoring,3
+vlsi,3
+demand assigned multiple access,3
+integration,3
+braking,3
+digital arithmetic,3
+waste management,3
+regulators,3
+broadband amplifiers,3
+interferometry,3
+graphics,3
+us department of transportation,3
+karhunen-loeve transforms,3
+health hazards,3
+communication complexity,3
+solids,3
+algebraic codes,3
+radio equipment,3
+digital magnetic recording,3
+vector quantisation,3
+harmonic analysis,3
+integrated circuit interconnections,3
+rectangular waveguides,3
+handheld computers,3
+optical reflection,3
+proportional control,3
+radar antennas,3
+resistance heating,3
+induction generators,3
+invoicing,3
+hadamard matrices,3
+fuel economy,3
+induction motor drives,3
+inference algorithms,3
+greedy algorithms,3
+computer applications,3
+sprites (computer),3
+gratings,3
+space communication links,3
+commerce,3
+tree graphs,3
+linearity,3
+cyclic codes,3
+pipeline processing,3
+storms,3
+nonlinear equations,3
+attenuation measurement,3
+microwave measurements,3
+microwave ovens,3
+military computing,3
+nonhomogeneous media,3
+electromagnetic scattering,3
+damping,3
+electromagnetic modeling,3
+electromagnetic interference,3
+data acquisition,3
+photonics,3
+time of arrival estimation,3
+current measurement,3
+energy storage,3
+software performance,3
+planar arrays,3
+engineering profession,3
+method of moments,3
+poisson distribution,3
+envelope detectors,3
+cramer-rao bounds,3
+mesh generation,3
+memory management,3
+memory architecture,3
+polynomial approximation,3
+time-frequency analysis,3
+assembly systems,3
+tin,3
+test facilities,3
+dispatching,3
+mechanical power transmission,3
+nist,3
+system analysis and design,3
+synchronous motors,3
+cameras,3
+multifrequency antennas,3
+distributed sensors,3
+multimedia servers,3
+multiprocessor interconnection networks,3
+noise shaping,3
+niobium,3
+mutual coupling,3
+decision making,3
+biological cells,3
+decision theory,3
+calculus,3
+systolic arrays,3
+band-pass filters,3
+radiofrequency identification,3
+motion pictures,3
+target tracking,3
+ducts,3
+b-isdn,3
+phase control,3
+moment methods,3
+earth,3
+parallel architectures,3
+telecommunication traffic recording,3
+telegraphy,3
+automotive applications,3
+automation,3
+television receivers,3
+birth disorders,3
+board of directors,3
+power generation economics,3
+control system synthesis,3
+explosions,3
+power cables,3
+search methods,3
+matrix converters,3
+power convertors,3
+matlab,3
+circuit theory,3
+transaction databases,3
+marine vehicles,3
+circuit testing,3
+artificial neural networks,3
+transient analysis,3
+transmission line matrix methods,3
+magnetic analysis,3
+apertures,3
+fddi,3
+application specific processors,3
+fault detection,3
+fault tolerant systems,3
+software systems,3
+low pass filters,3
+field-flow fractionation,3
+tracking filters,3
+asia,3
+directed graphs,3
+filling,3
+tracking loops,3
+backpropagation,2
+dc-dc power convertors,2
+biological system modeling,2
+haptic interfaces,2
+human factors,2
+finite state machines,2
+boundary conditions,2
+capacitive sensors,2
+ham radios,2
+hadamard transforms,2
+computational intelligence,2
+data visualization,2
+differential equations,2
+fixed point arithmetic,2
+controllers,2
+carrier transmission on power lines,2
+dual band,2
+hospitals,2
+data storage systems,2
+computer aided instruction,2
+huffman codes,2
+groupware,2
+digital signal processors,2
+group codes,2
+biomedical signal processing,2
+digital tv,2
+acoustic scattering,2
+digital-analog conversion,2
+computer aided manufacturing,2
+bonding,2
+hoses,2
+feedforward neural nets,2
+communication system signaling,2
+determinants,2
+compensation,2
+brushless dc motors,2
+biological effects of fields,2
+cadcam,2
+beam steering,2
+binary search trees,2
+high performance computing,2
+delay lock loops,2
+holography,2
+high definition video,2
+distributed power generation,2
+diesel engines,2
+dispersion (wave),2
+calendars,2
+binary trees,2
+battery management systems,2
+acoustic noise,2
+computer crime,2
+hermitian matrices,2
+aperture antennas,2
+distortion measurement,2
+hopfield neural nets,2
+distance learning,2
+fiber nonlinear optics,2
+distributed programming,2
+financial management,2
+controllability,2
+dead reckoning,2
+error detection,2
+actuators,2
+computer displays,2
+ambient intelligence,2
+asynchronous communication,2
+chirp modulation,2
+delta-sigma modulation,2
+current distribution,2
+circuit noise,2
+bragg gratings,2
+encapsulation,2
+games,2
+discrete time filters,2
+cable television,2
+corporate acquisitions,2
+circuit stability,2
+evolutionary computation,2
+digital signatures,2
+delta modulation,2
+certification,2
+functional programming,2
+aerodynamics,2
+airplanes,2
+cable insulation,2
+aerospace industry,2
+erbium,2
+coupling circuits,2
+cmos technology,2
+aging,2
+friction,2
+clustering methods,2
+aircraft,2
+aircraft antennas,2
+digital control,2
+brakes,2
+expectation-maximization algorithms,2
+anechoic chambers,2
+echo interference,2
+automatic testing,2
+electric drives,2
+electric breakdown,2
+centralised control,2
+automatic speech recognition,2
+goniometers,2
+computer games,2
+conformance testing,2
+electromagnetic heating,2
+fault diagnosis,2
+content addressable storage,2
+forward contracts,2
+application specific integrated circuits,2
+economics,2
+data encapsulation,2
+digital phase locked loops,2
+geometric programming,2
+coils,2
+convex programming,2
+diodes,2
+electric variables measurement,2
+automatic frequency control,2
+approximation error,2
+authorization,2
+ansi standards,2
+anechoic chambers (electromagnetic),2
+electrochemical impedance spectroscopy,2
+electromagnetic compatibility,2
+adaptive kalman filters,2
+adaptive scheduling,2
+gas insulated transmission lines,2
+cache memory,2
+coding errors,2
+lyapunov methods,2
+hvac,2
+millimetre wave receivers,2
+mission critical systems,2
+mirrors,2
+spread spectrum radar,2
+stacking,2
+standards publication,2
+minimization,2
+stochastic programming,2
+mixers (circuits),2
+stock markets,2
+millimeter wave radar,2
+millimeter wave propagation,2
+storage area networks,2
+strategic planning,2
+military equipment,2
+spline,2
+speech recognition,2
+shift registers,2
+motion compensation,2
+nearest neighbor searches,2
+nash equilibrium,2
+multilevel systems,2
+slabs,2
+multi-agent systems,2
+motor drives,2
+software measurement,2
+speech processing,2
+software standards,2
+moon,2
+monopole antenna arrays,2
+modular construction,2
+spatial databases,2
+modeling,2
+middleware,2
+subcarrier multiplexing,2
+supercapacitors,2
+television broadcasting,2
+matrices,2
+magnetic heads,2
+technology planning,2
+telematics,2
+telemedicine,2
+telemetry,2
+linear predictive coding,2
+microwave antennas,2
+linear approximation,2
+limiters,2
+lighting control,2
+time factors,2
+time-domain synthesis,2
+tornadoes,2
+matrix multiplication,2
+system buses,2
+measurement techniques,2
+synchronous motor drives,2
+mechanical sensors,2
+synchronization,2
+switching networks,2
+memory,2
+merging,2
+message-oriented middleware,2
+meteorological radar,2
+microcomputer applications,2
+surgery,2
+microelectronics,2
+micromechanical devices,2
+microscopy,2
+microwave antenna arrays,2
+network address translation,2
+newton method,2
+life estimation,2
+radiofrequency filters,2
+radio applications,2
+physical optics,2
+phase shifters,2
+phase measurement,2
+radio navigation,2
+radio transceivers,2
+rail traffic,2
+pi control,2
+permittivity,2
+permission,2
+random number generation,2
+rapid transit systems,2
+patch antennas,2
+particle measurements,2
+physics,2
+planar antenna arrays,2
+shared memory systems,2
+power line communications,2
+process control,2
+prefetching,2
+power system protection,2
+power system analysis computing,2
+power supplies to apparatus,2
+power supplies,2
+power demand,2
+radial basis function networks,2
+radar imaging,2
+radar signal processing,2
+police data processing,2
+police,2
+hybrid fibre coax networks,2
+platinum,2
+reconfigurable architectures,2
+recursive filters,2
+reduced order systems,2
+notice of violation,2
+safety systems,2
+open loop systems,2
+scintillation,2
+secondary cells,2
+self-adjusting systems,2
+object detection,2
+semiconductor device noise,2
+ovens,2
+normal distribution,2
+nonparametric statistics,2
+nonlinear programming,2
+nonlinear optics,2
+sensor fusion,2
+shape measurement,2
+optical computing,2
+resumes,2
+optical information processing,2
+resonance,2
+resists,2
+remotely operated vehicles,2
+remote monitoring,2
+optical repeaters,2
+reluctance motor drives,2
+optical scattering,2
+reluctance generators,2
+optical storage,2
+reliability theory,2
+optical waveguides,2
+orbits,2
+organisms,2
+organizing,2
+life testing,2
+programmable logic arrays,2
+injuries,2
+transponders,2
+tunable circuits and devices,2
+videotelephony,2
+lan interconnection,2
+integrated optics,2
+image classification,2
+transport control,2
+uninterruptible power systems,2
+industrial control,2
+weibull distribution,2
+unix,2
+ice,2
+video signal processing,2
+learning (artificial intelligence),2
+learning automata,2
+tungsten,2
+intelligent sensors,2
+insulated gate bipolar transistors,2
+visualization,2
+watches,2
+volume measurement,2
+intrusion detection,2
+indexing,2
+voice mail,2
+indium phosphide,2
+interactive systems,2
+image resolution,2
+uhf power amplifiers,2
+wavelet coefficients,2
+imaging phantoms,2
+uhf measurement,2
+induction motors,2
+kinetic theory,2
+learning systems,2
+walsh functions,2
+ventilation,2
+licenses,2
+information services,2
+transducers,2
+utility theory,2
+vents,2
+transfer function matrices,2
+information processing,2
+velocity control,2
+xml,2
+transcoding,2
+vhf radio propagation,2
+libraries,2
+insertion loss,2
+vehicle crash testing,2
+hybrid power systems,2
+hypermedia,2
+shape control,1
+replicated databases,1
+cmos analogue integrated circuits,1
+cmos integrated circuits,1
+senior members,1
+voting,1
+reflectivity,1
+air conditioning,1
+research initiatives,1
+reflector antenna feeds,1
+change detection algorithms,1
+veins,1
+virtual environment,1
+virtual machining,1
+reluctance motors,1
+volterra equations,1
+collaborative software,1
+refractive index,1
+virtual manufacturing,1
+clutter,1
+reluctance machines,1
+sensors,1
+region 1,1
+shafts,1
+central processing unit,1
+senior citizens,1
+sea surface,1
+virtual enterprises,1
+rotors,1
+satellite navigation,1
+satellite tracking,1
+saturn,1
+advertising,1
+scholarships,1
+aerospace electronics,1
+advisory committee,1
+chaos generators,1
+circuit faults,1
+circuit analysis,1
+video cameras,1
+chromium alloys,1
+sdram,1
+sea measurements,1
+chip scale packaging,1
+s-parameters,1
+self-organising feature maps,1
+resonant frequency,1
+vsat networks,1
+seminars,1
+chemicals,1
+clouds,1
+additives,1
+semiconductor diodes,1
+rivers,1
+cloning,1
+rlc circuits,1
+road vehicle radar,1
+africa,1
+classification tree analysis,1
+classification algorithms,1
+channel spacing,1
+rotation measurement,1
+circuits and systems,1
+video tape recorders,1
+arm,1
+refining,1
+accidents,1
+acceleration measurement,1
+computer security,1
+q factor,1
+q measurement,1
+quadratic programming,1
+qualifications,1
+computer languages,1
+computer interfaces,1
+workstation clusters,1
+computer hacking,1
+computer graphic equipment,1
+quality assessment,1
+query processing,1
+radar applications,1
+radar detection,1
+wires,1
+computer crashes,1
+computer bugs,1
+computer buffers,1
+workstations,1
+pwm power convertors,1
+computer telephony integration,1
+conductivity,1
+connectors,1
+project management,1
+conical antennas,1
+propellers,1
+conformal antennas,1
+conferences,1
+conference proceedings,1
+conductors,1
+prosthetics,1
+wounds,1
+protons,1
+pulse amplifiers,1
+pulse generation,1
+pulse width modulation,1
+computerised navigation,1
+pursuit algorithms,1
+computerised instrumentation,1
+pwm invertors,1
+radar equipment,1
+radar scattering,1
+color,1
+radar theory,1
+radiowave interferometry,1
+waves,1
+wavelet packets,1
+railway electrification,1
+railway safety,1
+rain fading,1
+randomised algorithms,1
+waveguides,1
+reachability analysis,1
+vehicle detection,1
+read only memory,1
+adaptive coding,1
+read-write memory,1
+wave functions,1
+adaptive decoding,1
+combustion,1
+reconfigurable logic,1
+watermarking,1
+comb filters,1
+radiotelephony,1
+weather forecasting,1
+companies,1
+acoustic testing,1
+wireless personal area networks,1
+wireless cellular systems,1
+computer aided analysis,1
+wire antennas,1
+windows,1
+acoustic sensors,1
+computational intelligence society,1
+radiation effects,1
+acoustical engineering,1
+radio stations,1
+active antenna arrays,1
+active antennas,1
+active noise reduction,1
+computational electromagnetics,1
+radio communication countermeasures,1
+web design,1
+radio reception,1
+complex networks,1
+reactive power,1
+signal representations,1
+cellular neural networks,1
+battery charge measurement,1
+synchronous generators,1
+tree codes,1
+banking,1
+bang-bang control,1
+travelling wave tubes,1
+travelling salesman problems,1
+appropriate technology,1
+system recovery,1
+system-on-a-chip,1
+tachometers,1
+takagi-sugeno model,1
+backscatter,1
+target recognition,1
+taxonomy,1
+taylor series,1
+transmission line theory,1
+technological forecasting,1
+axles,1
+transmission line measurements,1
+aperture coupled antennas,1
+switching converters,1
+shock absorbers,1
+switched networks,1
+surface impedance,1
+binary decision diagrams,1
+surface roughness,1
+bifurcation,1
+uhf phase shifters,1
+surface treatment,1
+bicycles,1
+uhf measurements,1
+bessel functions,1
+uhf filters,1
+belts,1
+surface-mount technology,1
+belief maintenance,1
+two-term control,1
+surges,1
+tv interference,1
+surveillance,1
+switched mode power supplies,1
+tuners,1
+technology transfer,1
+avalanche photodiodes,1
+teeth,1
+telecommunication cables,1
+aquaculture,1
+atomic measurements,1
+atom optics,1
+atmospheric turbulence,1
+atmospheric techniques,1
+atmosphere,1
+architecture,1
+argon,1
+asynchronous machines,1
+time sharing computer systems,1
+association rules,1
+time-varying filters,1
+tires,1
+tomography,1
+ash,1
+traction,1
+traction power supplies,1
+arithmetic codes,1
+traffic,1
+time division synchronous code division multiple access,1
+tiles,1
+audio databases,1
+tensile stress,1
+telecommunication links,1
+approximation methods,1
+automobile industry,1
+television reception,1
+television standards,1
+temperature,1
+automatic guided vehicles,1
+automatic gain control,1
+termination of employment,1
+auditory displays,1
+ternary codes,1
+automata,1
+terrain factors,1
+test equipment,1
+thermal loading,1
+authoring systems,1
+thermodynamics,1
+thumb,1
+support vector machines,1
+superconducting filters,1
+superconducting filaments and wires,1
+speech enhancement,1
+usability,1
+cable testing,1
+us department of energy,1
+cable shielding,1
+aluminum gallium nitride,1
+butterworth filters,1
+business data processing,1
+software testing,1
+urban planning,1
+solar powered vehicles,1
+space exploration,1
+space power stations,1
+building materials,1
+building,1
+space vehicles,1
+spaceborne radar,1
+amplification,1
+amplifiers,1
+brushes,1
+software engineering,1
+software design,1
+softening,1
+traffic information systems,1
+vegetation mapping,1
+cathode ray tubes,1
+casting,1
+cascade networks,1
+shot noise,1
+sigma-delta modulation,1
+alarm systems,1
+cardiology,1
+signalling,1
+sockets,1
+algebra,1
+capacitance,1
+silicon compounds,1
+utility programs,1
+sliding mode control,1
+slot antenna arrays,1
+snow,1
+algorithm theory,1
+spectral-domain analysis,1
+speech intelligibility,1
+bioinformatics,1
+universal serial bus,1
+angular velocity measurement,1
+blood,1
+strain gauges,1
+strain measurement,1
+annealing,1
+production systems,1
+stress measurement,1
+stripline,1
+anodes,1
+strips,1
+strontium,1
+bipolar digital integrated circuits,1
+structural beams,1
+biomembranes,1
+structural engineering,1
+biomedical engineering,1
+uhf propagation,1
+subspace constraints,1
+antenna accessories,1
+angular measurement,1
+aneurysm,1
+boats,1
+uncertain systems,1
+analog computers,1
+splicing,1
+unified modeling language,1
+splines (mathematics),1
+sport,1
+analogue simulation,1
+brazil council,1
+uncertainty handling,1
+brain modeling,1
+ultra wideband antennas,1
+brain,1
+ultrasonic variables measurement,1
+boundary integral equations,1
+ultrasonic imaging,1
+starting,1
+boosting,1
+bones,1
+stators,1
+stress,1
+pneumatic systems,1
+production facilities,1
+zinc,1
+financial advantage program,1
+linear algebra,1
+linear code,1
+linear quadratic control,1
+liquid crystal displays,1
+lithium,1
+load flow,1
+load flow analysis,1
+load modeling,1
+local government,1
+fiber lasers,1
+femtocell networks,1
+local oscillators,1
+feedforward systems,1
+locomotives,1
+logic circuits,1
+logic design,1
+logic devices,1
+logistics,1
+feature extraction,1
+loop antennas,1
+loudspeakers,1
+low-noise amplifiers,1
+line-of-sight propagation,1
+limiting,1
+finishing,1
+focusing,1
+learning,1
+frame relay,1
+least mean square algorithms,1
+legal factors,1
+fourier transform optics,1
+legged locomotion,1
+level control,1
+force feedback,1
+force control,1
+footwear,1
+fluid flow,1
+light scattering,1
+fluid dynamics,1
+flow graphs,1
+flow control,1
+lifetime estimation,1
+light absorption,1
+flexible printed circuits,1
+flexible manufacturing systems,1
+light interference,1
+light pens,1
+light propagation,1
+low-pass filters,1
+m-sequences,1
+law,1
+machine vision,1
+meta data,1
+mice,1
+microcomputers,1
+energy states,1
+energy resources,1
+microcontrollers,1
+micromachining,1
+microsensors,1
+microstrip,1
+microwave bands,1
+employee welfare,1
+emp radiation effects,1
+microwave devices,1
+electrostatic precipitators,1
+electrons,1
+microwave filters,1
+microwave heating,1
+electronic equipment testing,1
+electronic design automation and methodology,1
+microwave integrated circuits,1
+electromagnetic waveguides,1
+electromagnetic wave transmission,1
+microwave measurement,1
+environmental economics,1
+member and geographic activities board committees,1
+medical treatment,1
+magnetic separation,1
+fans,1
+magnesium,1
+magnesium alloys,1
+magnetic cores,1
+face recognition,1
+magnetic field integral equations,1
+magnetic fields,1
+magnetic recording noise,1
+magnetic resonance,1
+expert systems,1
+magneto electrical resistivity imaging technique,1
+medical services,1
+management information systems,1
+markup languages,1
+matching pursuit algorithms,1
+measurement systems,1
+measurement uncertainty,1
+mechanical engineering computing,1
+mechanical factors,1
+median filters,1
+error compensation,1
+medical diagnostic imaging,1
+law enforcement,1
+lattice theory,1
+production engineering computing,1
+graphical models,1
+harmonics,1
+impedance measurement,1
+implants,1
+hard disks,1
+importance sampling,1
+hankel matrices,1
+impulse testing,1
+hamming weight,1
+hamming codes,1
+indoor communication,1
+induction machines,1
+h<sup>&infin;</sup> optimisation,1
+inductors,1
+industrial engineering,1
+industrial power systems,1
+industrial training,1
+ground support,1
+infinite horizon,1
+green's function methods,1
+influenza,1
+gray codes,1
+gravity,1
+information dissemination,1
+hazards,1
+hazards and race conditions,1
+immune system,1
+high-speed electronics,1
+hydraulic actuators,1
+hydraulic systems,1
+hydrogen,1
+hypercubes,1
+hypermedia markup languages,1
+holographic optical components,1
+hysteresis motors,1
+hilbert transforms,1
+identity-based encryption,1
+ieee members,1
+ieee news,1
+headphones,1
+ieee press,1
+iii-v semiconductors,1
+high level synthesis,1
+high definition television,1
+image edge detection,1
+image motion analysis,1
+image processing,1
+image recognition,1
+heating,1
+image sensors,1
+information networks,1
+information resources,1
+laser tuning,1
+infrared detectors,1
+intelligent structures,1
+interactive television,1
+interactive terminals,1
+interactive video,1
+international space station,1
+inverters,1
+fuel optimal control,1
+invertors,1
+itemsets,1
+kelvin,1
+kinematics,1
+fresnel reflection,1
+fresnel diffraction,1
+knee,1
+knowledge based systems,1
+labeling,1
+frequency selective surfaces,1
+lan emulation,1
+frequency multipliers,1
+land vehicles,1
+frequency locked loops,1
+laser beams,1
+laser fusion,1
+gallium nitride,1
+intelligent control,1
+intelligent agent,1
+geography,1
+infrared spectra,1
+inhomogeneous media,1
+ink,1
+global communication,1
+geoscience,1
+inspection,1
+geometrical theory of diffraction,1
+geometrical optics,1
+instruction sets,1
+geometric codes,1
+genomics,1
+intelligent actuators,1
+genetic programming,1
+insulation,1
+genetic engineering,1
+integrated circuit layout,1
+integrated circuit measurements,1
+integrated circuit modeling,1
+integrated circuit noise,1
+integrated circuit technology,1
+integrated circuit testing,1
+integrated software,1
+microwave photonics,1
+electromagnetic wave polarization,1
+microwave technology,1
+data processing,1
+ordinary magnetoresistance,1
+page description languages,1
+pain,1
+parametric devices,1
+defense industry,1
+pareto distribution,1
+partial response signaling,1
+particle filters,1
+decision trees,1
+particle tracking,1
+path planning,1
+pattern classification,1
+decentralised control,1
+perceptrons,1
+periodic structures,1
+dc-dc power converters,1
+permeability,1
+database systems,1
+database management systems,1
+data visualisation,1
+personnel,1
+perturbation techniques,1
+pervasive computing,1
+optimized production technology,1
+optical waveguide theory,1
+optical variables control,1
+dielectric loss measurement,1
+optical diffraction,1
+optical fiber polarization,1
+optical fiber theory,1
+optical fibre couplers,1
+optical fibre dispersion,1
+optical fibres,1
+optical films,1
+optical limiters,1
+dielectrics,1
+dielectric substrates,1
+dielectric constant,1
+optical transfer function,1
+dictionaries,1
+dh-hemts,1
+deterministic algorithms,1
+optical materials,1
+optical projectors,1
+optical refraction,1
+design of experiments,1
+optical saturation,1
+optical signal detection,1
+demultiplexing equipment,1
+petroleum,1
+data models,1
+microwave theory and techniques,1
+phantoms,1
+copy protection,1
+power steering,1
+coordinate measuring machines,1
+cooling,1
+power system dynamics,1
+power system harmonics,1
+controller area networks,1
+power system security,1
+power system simulation,1
+power transmission,1
+control system analysis,1
+control engineering,1
+power transmission lines,1
+prediction methods,1
+context-free grammars,1
+predictive coding,1
+predictive encoding,1
+pressing,1
+content-addressable storage,1
+printing,1
+content based retrieval,1
+private telephone exchanges,1
+containers,1
+copyright,1
+copyright protection,1
+power overhead lines,1
+polyethylene,1
+phase detectors,1
+phase distortion,1
+phase locked oscillators,1
+data communication equipment,1
+physical theory of diffraction,1
+piecewise linear approximation,1
+pixel,1
+planets,1
+poles and towers,1
+covariance analysis,1
+polynomial matrices,1
+correlation,1
+couplers,1
+portable media players,1
+positron emission tomography,1
+possibility theory,1
+power capacitors,1
+corrugated surfaces,1
+corrosion,1
+power dissipation,1
+power harmonic filters,1
+power industry,1
+digital cameras,1
+optical device fabrication,1
+optical coupling,1
+optical communication equipment,1
+elasticity,1
+elastic deformation,1
+model driven engineering,1
+educational technology,1
+education,1
+edge detection,1
+eddy current losses,1
+economic indicators,1
+economic forecasting,1
+echo suppression,1
+modulators,1
+echo cancellers,1
+echo,1
+modules,1
+dynamic testing,1
+monos devices,1
+moore's law,1
+morphology,1
+duality (mathematics),1
+dual codes,1
+motion analysis,1
+motion control,1
+dram chips,1
+electric conduits,1
+electric distortion,1
+electric fields,1
+electrodes,1
+electromagnetic spectrum,1
+electromagnetic shielding,1
+electromagnetic radiation,1
+military satellites,1
+military standards,1
+electromagnetic measurements,1
+millimeter wave communication,1
+electromagnetic induction,1
+millimetre wave antenna arrays,1
+millimetre wave antennas,1
+millimetre wave oscillators,1
+electric generators,1
+electrochemical electrodes,1
+electricity supply industry,1
+electrical safety,1
+minerals,1
+minimization methods,1
+electric resistance,1
+minimum entropy methods,1
+mining,1
+electric machines,1
+electric locomotives,1
+drag,1
+motion measurement,1
+doppler radar,1
+digital television,1
+nonuniform sampling,1
+notebook computers,1
+np-complete problem,1
+np-hard problem,1
+dipole antenna arrays,1
+object recognition,1
+digital-to-frequency converters,1
+object-oriented languages,1
+object-oriented methods,1
+observability,1
+ocean waves,1
+disc drives,1
+digital storage,1
+office automation,1
+online front-ends,1
+online operation,1
+open area test sites,1
+digital recording,1
+operating system kernels,1
+operations research,1
+optical arrays,1
+optical beams,1
+disaster management,1
+nonlinear systems,1
+mpeg standards,1
+negative feedback,1
+domestic appliances,1
+multichip modules,1
+multidimensional digital filters,1
+multilayer perceptrons,1
+multiplexing equipment,1
+multiprocessing systems,1
+distributed parameter circuits,1
+national security,1
+navigation,1
+neck,1
+neodymium,1
+nonlinear functions,1
+network operating systems,1
+disruption tolerant networking,1
+neurons,1
+niobium compounds,1
+noise figure,1
+nominations and elections,1
+disk drives,1
+nonlinear dynamical systems,1
+discrete transforms,1
+discrete time systems,1
+zirconium,1

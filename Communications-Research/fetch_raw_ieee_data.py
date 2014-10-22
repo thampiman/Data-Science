@@ -1,7 +1,7 @@
 import urllib2
 
 def main():
-    yearsi = range(2002,2003)
+    years = [str(year) for year in range(2002,2013)]
     journals = [('ISWCS','iswcs'),
                 ('European%20Wireless%20Conference','ew'),
                 ('IEEE%20WoWMoM','wowmom'),
@@ -17,8 +17,7 @@ def main():
                 ('Communications%20Letters','letters')]
     
     for (journal,filename) in journals:
-        for yeari in yearsi:
-            year = str(yeari)
+        for year in years:
             output_file = 'raw-data/' + filename + '_' + year + '.xml'
             fetch_data(year,journal,output_file)
 

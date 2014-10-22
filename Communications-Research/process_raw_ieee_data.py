@@ -12,7 +12,7 @@ from time import sleep
 from xml.parsers import expat
 
 def main():
-    yearsi = range(2002,2013)
+    years = [str(year) for year in range(2002,2013)]
     input_files = ['iswcs','ew','wowmom','wcnc','vtc_spring','vtc_fall','icc',
                    'globecom','pimrc','jsac','tvt','twc','letters']
     
@@ -43,9 +43,8 @@ def main():
     print 'DONE\n'
     
     for file in input_files:
-        for yeari in yearsi:
+        for year in years:
             data = []
-            year = str(yeari)
             input_file = input_dir + '/' + file + '_' + year + '.xml'
             output_file = output_dir + '/' + file + '_' + year + '.json'
             process_raw_data(input_file,output_file,year,data,app_id,regions,country_codes,countries)

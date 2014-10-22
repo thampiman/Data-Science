@@ -4,13 +4,20 @@ import numpy as np
 import pandasql
 
 def main():
+    years = [str(year) for year in range(2002,2013)]
+    
     # Load IEEE data
     ieee_data = load_ieee_data()
     
+    # Load Tags data
+    tags_data = load_tags_data(years)
+    
     # Analyse the IEEE data
-    # analyse_tags(ieee_data)
     analyse_countries(ieee_data)
-    # analyse_publications(ieee_data)
+    analyse_publications(ieee_data)
+    
+    # Analyse the Tags Data
+    analyse_tags(tags_data,years)
     
 def load_ieee_data():
     ieee_data = pd.read_json('final-data/ieee_data.json')
@@ -23,9 +30,15 @@ def load_ieee_data():
     
     return ieee_data
 
-def analyse_tags(ieee_data):
-    grouped = ieee_data.groupby(['year','tags'])
-    data_by_year = grouped.sum()
+def load_tags_data(years):
+    tags_data = {}
+    for year in years:
+        tags_file = 'final-data/tags_' + year + '.csv'
+        tags_df = pd.read_csv(tags_file)
+        tags_df.columns = ['tag','citations']
+        tags_data[year] = tags_df
+        
+    return tags_data
 
 def analyse_countries(ieee_data):
     grouped = ieee_data.groupby('country')
@@ -60,21 +73,58 @@ def analyse_countries(ieee_data):
     citations_per_pub.to_csv('analysed-data/citations_per_pub_by_country.csv')
 
 def analyse_publications(ieee_data):
-    pubs_by_yr_code = ieee_data.groupby(['code','year'])['citations'].count().unstack()
-    citations_by_yr_code = ieee_data.groupby(['code','year'])['citations'].sum().unstack()
-    quality_by_yr_code = citations_by_yr_code / pubs_by_yr_code
+    pubs = ieee_data.groupby(['code','year'])['citations'].count().unstack()
+    citations = ieee_data.groupby(['code','year'])['citations'].sum().unstack()
+    citations_per_pub = citations / pubs
 
-    print 'Number of Publications grouped by Code and Year'
-    print '-----------------------------------------------'
-    print pubs_by_yr_code
+    print 'Number of Publications by Code and Year'
+    print '---------------------------------------'
+    print pubs
     print '\n'
-    print 'Quality of Publications grouped by Code and Year'
-    print '------------------------------------------------'
-    print quality_by_yr_code
+    print 'Number of Citations by Code and Year'
+    print '------------------------------------'
+    print citations
+    print '\n'
+    print 'Number of Citations per Publication by Code and Year'
+    print '----------------------------------------------------'
+    print citations_per_pub
     print '\n'
 
-    #pubs_by_yr_code.to_csv('analysed-data/publications_by_year_code.csv')
-    #quality_by_yr_code.to_csv('analysed-data/quality_of_publications_by_year_code.csv')
+    pubs.to_csv('analysed-data/pubs_by_year_code.csv')
+    citations.to_csv('analysed-data/citations_by_year_code.csv')
+    citations_per_pub.to_csv('analysed-data/citations_per_pub_by_year_code.csv')
+
+def analyse_tags(tags_data,years):
+    for year in years:
+        data = {}
+        tags_df = tags_data[year]
+        
+        grouped = tags_df.groupby('tag')
+        
+        pubs = grouped['citations'].count()
+        citations = grouped['citations'].sum()
+        citations_per_pub = citations / pubs
+        
+        pubs.sort(ascending=False)
+        citations.sort(ascending=False)
+        citations_per_pub.sort(ascending=False)
+        
+        print 'Top 20 Tags by Publications for ' + year 
+        print '------------------------------------'
+        print pubs[0:20]
+        print '\n'
+        print 'Top 20 Tags by Citations for ' + year
+        print '---------------------------------'
+        print citations[0:20]
+        print '\n'
+        print 'Top 20 Tags by Citations per Publication for ' + year
+        print '-------------------------------------------------'
+        print citations_per_pub[0:20]
+        print '\n'
+        
+        pubs.to_csv('analysed-data/pubs_by_tags_' + year + '.csv')
+        citations.to_csv('analysed-data/citations_by_tags_' + year + '.csv')
+        citations_per_pub.to_csv('analysed-data/citations_per_pub_by_tags_' + year + '.csv')
 
 if __name__ == "__main__":
     main()
