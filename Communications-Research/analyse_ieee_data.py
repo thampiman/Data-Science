@@ -1,6 +1,7 @@
 from pandas import Series, DataFrame
 import pandas as pd
 import numpy as np
+import pandasql
 
 def main():
     # Load IEEE data
@@ -48,7 +49,7 @@ def load_ieee_data():
                            vtc_fall,vtc_spring,wcnc,wowmom,
                            jsac,letters,tvt,twc])
     
-    # Format Country and Tags strings - make them lowercase
+    # Format Country and Tags strings
     country_format = lambda x: np.NaN if x == 'NA' else x.lower()
     tags_format = lambda x: np.NaN if x == '' else x.lower()
     ieee_data['country'] = ieee_data['country'].map(country_format)
@@ -64,6 +65,8 @@ def analyse_publications(ieee_data):
     pubs_by_yr_code = ieee_data.groupby(['code','year'])['citations'].count().unstack()
     citations_by_yr_code = ieee_data.groupby(['code','year'])['citations'].sum().unstack()
     quality_by_yr_code = citations_by_yr_code / pubs_by_yr_code
+    
+    '''
     print 'Number of Publications grouped by Code and Year'
     print '-----------------------------------------------'
     print pubs_by_yr_code
@@ -72,39 +75,42 @@ def analyse_publications(ieee_data):
     print '------------------------------------------------'
     print quality_by_yr_code
     print '\n'
+    '''
     
-    pubs_by_yr_code.to_csv('analysed-data/publications_by_year_code.csv')
-    quality_by_yr_code.to_csv('analysed-data/quality_of_publications_by_year_code.csv')
+    #pubs_by_yr_code.to_csv('analysed-data/publications_by_year_code.csv')
+    #quality_by_yr_code.to_csv('analysed-data/quality_of_publications_by_year_code.csv')
 
 def analyse_countries(ieee_data):
-    pubs_by_country = ieee_data.groupby('country')['citations'].count()
-    citations_by_country = ieee_data.groupby('country')['citations'].sum()
+    grouped = ieee_data.groupby('country')
+    grouped_citations = grouped['citations']
     
-    pubs_by_country_filtered = pubs_by_country[pubs_by_country >= 100]
-    citations_by_country_filtered = citations_by_country[pubs_by_country >= 100]
+    pubs = grouped_citations.count()
+    citations = grouped_citations.sum()
     
-    quality_by_country = citations_by_country_filtered / pubs_by_country_filtered
+    pubs_filtered = pubs[pubs >= 100]
+    citations_filtered = citations[pubs >= 100]
+    citations_per_pub = citations_filtered / pubs_filtered
     
-    pubs_by_country.sort(ascending=False)
-    citations_by_country.sort(ascending=False)
-    quality_by_country.sort(ascending=False)
+    pubs.sort(ascending=False)
+    citations_filtered.sort(ascending=False)
+    citations_per_pub.sort(ascending=False)
         
     print 'Number of Publications by Country'
     print '---------------------------------'
-    print pubs_by_country[0:20]
+    print pubs[0:20]
     print '\n'
     print 'Number of Citations by Country'
     print '------------------------------'
-    print citations_by_country[0:20]
+    print citations_filtered[0:20]
     print '\n'
     print 'Number of Citations per Publication by Country'
     print '----------------------------------------------'
-    print quality_by_country[0:20]
+    print citations_per_pub[0:20]
     print '\n'
-    
-    pubs_by_country[0:20].to_csv('analysed-data/publications_by_country.csv')
-    citations_by_country[0:20].to_csv('analysed-data/citations_by_country.csv')
-    quality_by_country[0:20].to_csv('analysed-data/quality_of_publications_by_country.csv')
+
+    pubs.to_csv('analysed-data/pubs_by_country.csv')
+    citations_filtered.to_csv('analysed-data/citations_by_country.csv')
+    citations_per_pub.to_csv('analysed-data/citations_per_pub_by_country.csv')
 
 if __name__ == "__main__":
     main()
