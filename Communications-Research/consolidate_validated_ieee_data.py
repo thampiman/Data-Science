@@ -1,6 +1,5 @@
 import json
 import csv
-from os import remove
 
 def main():
     # main function
@@ -13,20 +12,8 @@ def main():
              'conference','conference','conference','conference','journal',
              'journal','journal','journal']
     
-    cleanup_data(years)         
     consolidate_ieee_data(years,codes,types)
     consolidate_tags_by_year(years,codes)
-
-def cleanup_data(years):
-    try:
-        ieee_file = 'final-data/ieee_data.json'
-        remove(ieee_file)
-    
-        for year in years:
-            tags_file = 'final-data/tags_' + year + '.csv'
-            remove(tags_file)
-    except OSError:
-        pass
 
 def consolidate_ieee_data(years,codes,types):
     output_data = []
