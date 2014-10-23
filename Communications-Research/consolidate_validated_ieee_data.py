@@ -76,6 +76,7 @@ def add_tags(input_file,output_file):
     with open(output_file,'ab') as csvfile:
         writer = csv.writer(csvfile,delimiter=',')
         for paper in data:
+            title = paper['title']
             authors = paper['authors']
             tags = paper['tags']
             citations = paper['citations']
@@ -86,7 +87,7 @@ def add_tags(input_file,output_file):
             tags = tags.split(',')
             for tag in tags:
                 tag = tag.lower()
-                writer.writerow([tag,citations])
+                writer.writerow([tag,citations,title.encode('utf-8')])
         
 if __name__ == "__main__":
     main()
