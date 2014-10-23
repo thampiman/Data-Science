@@ -78,7 +78,9 @@ def consolidate_tags_by_year(years,codes):
             d['pubs'] = value['pubs']
             d['citations'] = value['citations']
             d['citations_per_pub'] = d['citations'] / float(d['pubs'])
-            d['titles'] = value['titles']
+            titles = str(value['titles'])
+            titles = titles.replace(',',';')
+            d['titles'] = titles
             output_data.append(d)
         
         print '\nConsolidating data to file: ' + output_file
