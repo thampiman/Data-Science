@@ -64,30 +64,54 @@ def add_data(input_file,code,type,output_data):
 def consolidate_tags_by_year(years,codes):
     print '\n\nConsolidating Tags Data'
     for year in years:
-        output_file = 'final-data/tags_' + year + '.csv'
+        output_file = 'final-data/tags_' + year + '.json'
+        tags_dict = {}
         for code in codes:
             input_file = 'validated-data/' + code + '_v_' + year + '.json'
-            add_tags(input_file,output_file)
+            add_tags(input_file,tags_dict)
 
-def add_tags(input_file,output_file):
+        output_data = []
+        print '\nFormatting Tags Dictionary for ' + year
+        for key,value in tags_dict.iteritems():
+            d = {}
+            d['tag'] = key
+            d['pubs'] = value['pubs']
+            d['citations'] = value['citations']
+            d['citations_per_pub'] = d['citations'] / float(d['pubs'])
+            d['titles'] = value['titles']
+            output_data.append(d)
+        
+        print '\nConsolidating data to file: ' + output_file
+        with open(output_file,'w') as f:
+            json.dump(output_data,f)
+
+def add_tags(input_file,tags_dict):
     data = json.loads(open(input_file).read())
     
     print '\nProcessing data from file: ' + input_file
-    with open(output_file,'ab') as csvfile:
-        writer = csv.writer(csvfile,delimiter=',')
-        for paper in data:
-            title = paper['title']
-            authors = paper['authors']
-            tags = paper['tags']
-            citations = paper['citations']
-        
-            if len(authors) == 0 or len(tags) == 0:
-                continue
-        
-            tags = tags.split(',')
-            for tag in tags:
-                tag = tag.lower()
-                writer.writerow([tag,citations,title.encode('utf-8')])
+    for paper in data:
+        title = paper['title']
+        authors = paper['authors']
+        tags = paper['tags']
+        citations = paper['citations']
+    
+        if len(authors) == 0 or len(tags) == 0:
+            continue
+    
+        tags = tags.split(',')
+        for tag in tags:
+            tag = tag.lower()
+            if tag in tags_dict:
+                tag_data = tags_dict[tag]
+                tag_data['pubs'] += 1
+                tag_data['citations'] += citations
+                tag_data['titles'].append(title)
+            else:
+                tag_data = {}
+                tag_data['pubs'] = 1
+                tag_data['citations'] = citations
+                tag_data['titles'] = [title]
+                tags_dict[tag] = tag_data
         
 if __name__ == "__main__":
     main()

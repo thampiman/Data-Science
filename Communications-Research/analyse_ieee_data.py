@@ -33,9 +33,8 @@ def load_ieee_data():
 def load_tags_data(years):
     tags_data = {}
     for year in years:
-        tags_file = 'final-data/tags_' + year + '.csv'
-        tags_df = pd.read_csv(tags_file)
-        tags_df.columns = ['tag','citations']
+        tags_file = 'final-data/tags_' + year + '.json'
+        tags_df = pd.read_json(tags_file)
         tags_data[year] = tags_df
         
     return tags_data
@@ -96,19 +95,12 @@ def analyse_publications(ieee_data):
 
 def analyse_tags(tags_data,years):
     for year in years:
-        data = {}
         tags_df = tags_data[year]
         
-        grouped = tags_df.groupby('tag')
-        
-        pubs = grouped['citations'].count()
-        citations = grouped['citations'].sum()
-        citations_per_pub = citations / pubs
-        
-        pubs.sort(ascending=False)
-        citations.sort(ascending=False)
-        citations_per_pub.sort(ascending=False)
-        
+        pubs = tags_df.sort(columns='pubs',ascending=False,inplace=False)
+        citations = tags_df.sort(columns='citations',ascending=False,inplace=False)
+        citations_per_pub = tags_df.sort(columns='citations_per_pub',ascending=False,inplace=False)
+                
         print 'Top 20 Tags by Publications for ' + year 
         print '------------------------------------'
         print pubs[0:20]
