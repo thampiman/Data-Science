@@ -13,11 +13,11 @@ def main():
     tags_data = load_tags_data(years)
     
     # Analyse the IEEE data
-    # analyse_countries(ieee_data)
+    analyse_countries(ieee_data)
     # analyse_publications(ieee_data)
     
     # Analyse the Tags Data
-    analyse_tags(tags_data,years)
+    # analyse_tags(tags_data,years)
     
 def load_ieee_data():
     ieee_data = pd.read_json('final-data/ieee_data.json')
@@ -46,8 +46,8 @@ def analyse_countries(ieee_data):
     pubs = grouped_citations.count()
     citations = grouped_citations.sum()
     
-    pubs_filtered = pubs[pubs >= 100]
-    citations_filtered = citations[pubs >= 100]
+    pubs_filtered = pubs[pubs >= 300]
+    citations_filtered = citations[pubs >= 300]
     citations_per_pub = citations_filtered / pubs_filtered
     
     pubs.sort(ascending=False)
