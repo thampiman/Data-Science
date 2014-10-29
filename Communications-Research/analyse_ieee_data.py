@@ -14,10 +14,10 @@ def main():
     
     # Analyse the IEEE data
     analyse_countries(ieee_data)
-    # analyse_publications(ieee_data)
+    analyse_publications(ieee_data)
     
     # Analyse the Tags Data
-    # analyse_tags(tags_data,years)
+    analyse_tags(tags_data,years)
     
 def load_ieee_data():
     ieee_data = pd.read_json('final-data/ieee_data.json')
