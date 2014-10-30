@@ -41,7 +41,7 @@ def cleanup_data(input_file,output_file,country_codes,countries):
         a_list = affiliations.split(',')
         a_list = [s.strip() for s in a_list]
         
-        if country.lower() == 'egypt':
+        if country.lower() == 'australia':
             print '\nTitle: ' + title
             print 'Affiliations: ' + affiliations
             print 'Year: ' + year
