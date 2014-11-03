@@ -27,6 +27,9 @@ Papers published from 2002-2012 from the following conferences and journals are 
 
 The source code can be found [here](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/acquire_data.py) and the raw data in XML format can be found [here](https://github.com/thampiman/Data-Science/tree/master/Communications-Research/raw-data).
 
+### Processing
+The raw XML data is processed and converted to JSON. In addition, the citations for each paper is obtained using the [API](http://academic.research.microsoft.com/about/Microsoft%20Academic%20Search%20API%20User%20Manual.pdf) provided by Microsoft. In order to run the [code](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/process_data.py), add your own API ID in the [settings.json](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/settings.json) file. In order to obtain the location of each paper, a dictionary is first created using the [data](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/location-data/worldcitiespop.txt.zip) obtained from MaxMind where the key is the city/town and the value is the country. The affiliations data from the raw IEEE data is then stripped and the dictionary is searched to obtain the country. If a unique country is obtained, then it is saved in the processed JSON data. All the processed data can be found [here](https://github.com/thampiman/Data-Science/tree/master/Communications-Research/processed-data).
+
 ## Metrics and Preliminary Analysis
 ![Quantity and Quality over the years](Communications-Research/images/overall_quantity_quality.jpg)
 
