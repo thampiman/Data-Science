@@ -3,7 +3,26 @@ Communications Research
 This Python project under [Communications-Research](https://github.com/thampiman/Data-Science/tree/master/Communications-Research) analyses trends in wireless communications research from 2002-2012. Meta-data of major conferences and journals are obtained programmatically from the [IEEE](http://ieeexplore.ieee.org/gateway/) database. The citations are then obtained from [Microsoft Academic Search](http://academic.research.microsoft.com/) (programmatically) and [Google Scholar](http://scholar.google.com) (manually). The location of the primary authors of the papers are also obtained from the [MaxMind](https://www.maxmind.com/en/worldcities) world cities database (programmatically) and [Google](http://google.com) (manually). All this information is analysed to obtain trends in the past decade. 
 
 ## The Data
+The data collection process is shown below.
 ![Data Collection Process](Communications-Research/images/data_process.png)
+
+### Acquisition
+Papers published from 2002-2012 from the following conferences and journals are obtained:
+1. European Wireless (EW)
+2. Global Communications Conference (Globecom)
+3. International Conference on Communications (ICC)
+4. International Symposium on Wireless Communication Systems (ISWCS)
+5. Personal, Indoor, and Mobile Radio Communications (PIMRC)
+6. Vehicular Technology Conference - Spring (VTC-Spring)
+7. Vehicular Technology Conference - Fall (VTC-Fall)
+8. Wireless Communications and Networking Conference (WCNC)
+9. World of Wireless, Mobile and Multimedia Networks (WoWMoM)
+10. Journal on Selected Areas in Communications (JSAC)
+11. Communications Letters (Letters)
+12. Transactions on Vehicular Technology (TVT)
+13. Transactions on Wireless Communications (TWC)
+
+The source code can be found [here](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/acquire_data.py) and the raw data in XML format can be found [here](https://github.com/thampiman/Data-Science/tree/master/Communications-Research/raw-data).
 
 ## Metrics and Preliminary Analysis
 ![Quantity and Quality over the years](Communications-Research/images/overall_quantity_quality.jpg)
