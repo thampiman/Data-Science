@@ -1,4 +1,4 @@
-Communication Research
+Communications Research
 =====
 
 ## The Data
@@ -15,7 +15,7 @@ Communication Research
 
 ![Top Countries by Quality](Communications-Research/images/quality_by_country.jpg)
 
-## Top IEEE Conferences and Journals
+## Contributions and Rankings of Conferences and Journals
 ![Conference Contributions](Communications-Research/images/contribution_of_conf.jpg)
 
 ![Top Conferences](Communications-Research/images/quality_of_conf.jpg)
@@ -23,3 +23,7 @@ Communication Research
 ![Journal Contributions](Communications-Research/images/contribution_of_journal.jpg)
 
 ![Top Journals](Communications-Research/images/quality_of_journal.jpg)
+
+License
+=====
+The MIT License (MIT)
