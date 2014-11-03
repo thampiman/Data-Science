@@ -1,6 +1,6 @@
-[Communications Research](https://github.com/thampiman/Data-Science/tree/master/Communications-Research)
+Communications Research
 =====
-A Python project that analyses trends in wireless communications research from 2002-2012. 
+A Python [project](https://github.com/thampiman/Data-Science/tree/master/Communications-Research) that analyses trends in wireless communications research from 2002-2012. 
 
 ## The Data
 The data collection process is shown below.
