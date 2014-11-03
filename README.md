@@ -8,19 +8,22 @@ The data collection process is shown below.
 
 ### Acquisition
 Papers published from 2002-2012 from the following conferences and journals are obtained:
-1. European Wireless (EW)
-2. Global Communications Conference (Globecom)
-3. International Conference on Communications (ICC)
-4. International Symposium on Wireless Communication Systems (ISWCS)
-5. Personal, Indoor, and Mobile Radio Communications (PIMRC)
-6. Vehicular Technology Conference - Spring (VTC-Spring)
-7. Vehicular Technology Conference - Fall (VTC-Fall)
-8. Wireless Communications and Networking Conference (WCNC)
-9. World of Wireless, Mobile and Multimedia Networks (WoWMoM)
-10. Journal on Selected Areas in Communications (JSAC)
-11. Communications Letters (Letters)
-12. Transactions on Vehicular Technology (TVT)
-13. Transactions on Wireless Communications (TWC)
+
+1. Conferences
+   1. European Wireless (EW)
+   2. Global Communications Conference (Globecom)
+   3. International Conference on Communications (ICC)
+   4. International Symposium on Wireless Communication Systems (ISWCS)
+   5. Personal, Indoor, and Mobile Radio Communications (PIMRC)
+   6. Vehicular Technology Conference - Spring (VTC-Spring)
+   7. Vehicular Technology Conference - Fall (VTC-Fall)
+   8. Wireless Communications and Networking Conference (WCNC)
+   9. World of Wireless, Mobile and Multimedia Networks (WoWMoM)
+2. Journals
+   1. Journal on Selected Areas in Communications (JSAC)
+   2. Communications Letters (Letters)
+   3. Transactions on Vehicular Technology (TVT)
+   4. Transactions on Wireless Communications (TWC)
 
 The source code can be found [here](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/acquire_data.py) and the raw data in XML format can be found [here](https://github.com/thampiman/Data-Science/tree/master/Communications-Research/raw-data).
 
