@@ -6,7 +6,7 @@ A Python project that analyses trends in wireless communications research from 2
 The data collection process is shown below.
 ![Data Collection Process](Communications-Research/images/data_process.png)
 
-Meta-data from the following conferences and journals are obtained programmatically from the [IEEE](http://ieeexplore.ieee.org/gateway/) database.
+Meta-data from the following conferences and journals are obtained from the [IEEE](http://ieeexplore.ieee.org/gateway/) database.
 
 1. Conferences
    1. European Wireless (EW)
@@ -24,9 +24,9 @@ Meta-data from the following conferences and journals are obtained programmatica
    3. Transactions on Vehicular Technology (TVT)
    4. Transactions on Wireless Communications (TWC)
 
-The citations are then obtained from [Microsoft Academic Search](http://academic.research.microsoft.com/) programmatically. In order to use the [API](http://academic.research.microsoft.com/about/Microsoft%20Academic%20Search%20API%20User%20Manual.pdf), add your own ID in the [settings.json](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/settings.json) file. The citations are then cleaned up and validated using [Google Scholar](http://scholar.google.com). 
+The citations are then obtained from [Microsoft Academic Search](http://academic.research.microsoft.com/). In order to use the [API](http://academic.research.microsoft.com/about/Microsoft%20Academic%20Search%20API%20User%20Manual.pdf), add your own ID in the [settings.json](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/settings.json) file. The citations are then cleaned up and validated using [Google Scholar](http://scholar.google.com). 
 
-The locations of the primary authors of the papers are obtained from the [MaxMind](https://www.maxmind.com/en/worldcities) world cities database programmatically. Any missing data is then obtained from [Google](http://google.com).
+The locations of the primary authors of the papers are obtained from the [MaxMind](https://www.maxmind.com/en/worldcities) world cities database. Any missing data is then obtained from [Google](http://google.com).
 
 ## Metrics and Preliminary Analysis
 The [code](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/analyse_data.py) to analyse the data uses the following metrics:
