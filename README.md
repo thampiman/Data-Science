@@ -1,6 +1,6 @@
 Communications Research
 =====
-A Python [project](https://github.com/thampiman/Data-Science/tree/master/Communications-Research) that analyses trends in wireless communications research from 2002-2012. 
+A Python [project](https://github.com/thampiman/Data-Science/tree/master/Communications-Research) to analyse trends in wireless communications research. 
 
 ## The Data
 The data collection process is shown below.
@@ -24,23 +24,23 @@ Meta-data from the following conferences and journals are obtained from the [IEE
    3. Transactions on Vehicular Technology (TVT)
    4. Transactions on Wireless Communications (TWC)
 
-The citations are then obtained from [Microsoft Academic Search](http://academic.research.microsoft.com/). In order to use the [API](http://academic.research.microsoft.com/about/Microsoft%20Academic%20Search%20API%20User%20Manual.pdf), add your own ID in the [settings.json](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/settings.json) file. The citations are then cleaned up and validated using [Google Scholar](http://scholar.google.com). 
+The citations for each paper are obtained from [Microsoft Academic Search](http://academic.research.microsoft.com/). In order to use the [API](http://academic.research.microsoft.com/about/Microsoft%20Academic%20Search%20API%20User%20Manual.pdf), add your own API ID to the [settings.json](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/settings.json) file. The citations data is then cleaned up and validated using [Google Scholar](http://scholar.google.com). 
 
 The locations of the primary authors of the papers are obtained from the [MaxMind](https://www.maxmind.com/en/worldcities) world cities database. Any missing data is then obtained from [Google](http://google.com).
 
 ## Metrics and Preliminary Analysis
-The [code](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/analyse_data.py) to analyse the data uses the following metrics:
+The [code](https://github.com/thampiman/Data-Science/blob/master/Communications-Research/analyse_data.py) to analyse the data requires pandas, numpy and pandasql. The following metrics are used:
 
 1. Number of publications
 2. Number of citations
 3. Quality index = Number of citations / Number of publications
 
-The following graph shows the quantity and quality of papers over the years.
+The graph below shows the quantity and quality of papers over the years.
 
 ![Quantity and Quality over the years](Communications-Research/images/overall_quantity_quality.jpg)
 
 ## Top Trends
-Keywords from all the papers are analysed and the highly cited topics from over the years are shown in the bubble chart below.
+The highly cited topics from over the years are shown in the bubble chart below.
 
 ![Top Trends](Communications-Research/images/tag_cloud.png)
 
